@@ -1,0 +1,97 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+.content {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.video-container {
+  
+  width: 100vw;
+  height: 75vh;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.activitiees {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  background-color: #444444; /* Set the background color to white */
+  padding: 20px; /* Add padding for spacing inside the activities section */
+}
+
+.activity {
+  text-align: center;
+  
+}
+
+.activity h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: aliceblue;
+}
+
+.activity-images img {
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid black;
+  display: block;
+  transition: all 0.3s ease; /* Add a smooth transition effect */
+}
+
+.activity-images img:hover {
+  transform: scale(1.2); /* Scale the image slightly larger on hover */
+}
+
+
+
+
+.imported-image-container {
+  text-align: center;
+  margin-top: 20px;
+  height: 800px;
+  
+}
+
+.imported-image {
+  width: 700px; /* Adjust the width as needed */
+  height:auto;
+  border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+  
+}
+.activities-title {
+  text-align: center; /* Center the text horizontally */
+  margin-top: 20px; /* Add spacing as needed */
+}
+
+
+

@@ -1,0 +1,79 @@
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column; /* Change flex direction to column */
+  align-items: center; /* Center items vertically */
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center items horizontally */
+  width: 100%; /* Ensure the navigation takes full width */
+}
+
+/* Link Styles */
+.nav-link {
+display: inline-block;
+padding: 10px 20px;
+margin: 0 10px;
+border-radius: 5px;
+color: #fff;
+text-decoration: none;
+font-size: 16px;
+font-weight: bold;
+}
+
+/* Link Colors */
+.aboutus { background-color: #FF5733; }
+.activities { background-color: #FFC300; }
+.dailyschedule { background-color: #C70039; }
+.staffpage { background-color: #900C3F; }
+.gallery { background-color: #581845; }
+.holidays { background-color: #900C3F; }
+.contact { background-color: #C70039; }
+.signup { background-color: #FFC300; }
+
+/* Logo Styles */
+img.logo {
+width: 100px;
+height: 100px;
+margin-right: 20px;
+}
+
+/* YMCA and YMCA Kindergarten Logo Styles */
+img.ymca-logo,
+img.ymca-kindergarten-logo {
+width: 50px;
+height: 50px;
+margin-left: 20px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+/* Adjust header padding for smaller screens */
+header {
+  padding: 5px 0;
+}
+
+/* Adjust font size for navigation links on smaller screens */
+.nav-link {
+  font-size: 14px;
+}
+
+/* Adjust logo sizes for smaller screens */
+img.logo {
+  width: 80px;
+  height: 80px;
+}
+
+img.ymca-logo,
+img.ymca-kindergarten-logo {
+  width: 40px;
+  height: 40px;
+}
+}

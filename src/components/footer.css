@@ -1,0 +1,52 @@
+footer {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: none;
+  }
+  .social-media-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  .green-text{
+    color:#ffe8e8;
+  }
+  .social-link {
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #48cda7; /* Adjust the color as needed */
+    
+    transition: transform 0.2s, color 0.2s; /* Add transitions for transform and color changes */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    &:hover {
+      transform: scale(1.1) translate(0, -5px);
+      
+    }
+  
+    .follow-text {
+      margin-top: 10px;
+    }
+  }
+  .social-link.facebook {
+    color: #1877f2; /* Facebook blue color */
+    &:hover {
+      color: #0f43b4; /* Darker Facebook blue on hover */
+    }
+  }
+  
+  /* Style for Instagram link */
+  .social-link.instagram {
+    color: #bc2a8d; /* Instagram purple color */
+    &:hover {
+      color: #76195c; /* Darker Instagram purple on hover */
+    }
+  }
+  

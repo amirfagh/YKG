@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Main from "./components/main";
+import ContactUs from "./components/contactus";
+import AboutUs from "./components/about";
+import Ymca from "./components/ymca";
+import Signup from "./components/signup";
+import StaffPage from "./components/StaffPage";
+import HolidayChart from "./components/HolidayChart";
+import Gallery from "./components/Gallery";
+import DailySchedule from "./components/DailySchedule";
+import Activities from "./components/activities";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/ymca" element={<Ymca />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/StaffPage" element={<StaffPage />} />
+        <Route path="/holidaychart" element={<HolidayChart />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/DailySchedule" element={<DailySchedule />} />
+        <Route path="/activities" element={<Activities />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

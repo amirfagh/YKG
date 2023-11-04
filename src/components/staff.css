@@ -1,0 +1,58 @@
+/* staffpage.css */
+
+.staff-container {
+    max-width: 100%;
+    margin: 0 auto;
+    
+    text-align: center;
+  }
+  
+  .staff-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .staff-member {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+  }
+  
+  .profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .details h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .details p {
+    margin: 0;
+    color: #666;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+    .staff-member {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .staff-member {
+      width: 100%;
+    }
+  }
+  

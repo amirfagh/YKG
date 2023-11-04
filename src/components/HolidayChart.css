@@ -1,0 +1,22 @@
+/* styles.css (or your preferred CSS file) */
+
+.holiday-chart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .holiday-chart-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .holiday-chart-container img {
+    width: 100%;
+    max-width:100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
