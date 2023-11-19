@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
 import ymcaLogo from "../images/logoy.png";
-import ymcaKinderGartenLogo from "../images/logokg5.png";
 
 const Header = () => {
   const linkStyles = {
@@ -19,59 +18,55 @@ const Header = () => {
   return (
     <header>
       <nav style={{ justifyContent: "center" }}>
-        <Link to="/">
-          <img
-            src={ymcaKinderGartenLogo}
-            alt="YMCA Kindergarten Logo"
-            style={{ width: "60px", height: "70px", marginRight: "20px" }}
-          />
-        </Link>
         <div style={{ display: "flex", alignItems: "center" }}>
+          <Link to="/" style={{ ...linkStyles, backgroundColor: "#9DF7E5" }}>
+            Home
+          </Link>
           <Link
             to="/aboutus"
-            style={{ ...linkStyles, backgroundColor: "#CE7DA5" }}
+            style={{ ...linkStyles, backgroundColor: "#006BA6" }}
           >
             About Us
           </Link>
           <Link
             to="/activities"
-            style={{ ...linkStyles, backgroundColor: "#C6B1B2" }}
+            style={{ ...linkStyles, backgroundColor: "#0083E0" }}
           >
-            Activities
+            Our Activities
           </Link>
           <Link
             to="/DailySchedule"
-            style={{ ...linkStyles, backgroundColor: "#C2CBB9" }}
+            style={{ ...linkStyles, backgroundColor: "#F8DF00" }}
           >
             Daily Schedule
           </Link>
           <Link
             to="/StaffPage"
-            style={{ ...linkStyles, backgroundColor: "#BEE5BF" }}
+            style={{ ...linkStyles, backgroundColor: "#8F2D56" }}
           >
             Our Staff
           </Link>
           <Link
             to="/Gallery"
-            style={{ ...linkStyles, backgroundColor: "#CFECD1" }}
+            style={{ ...linkStyles, backgroundColor: "#D81159" }}
           >
             Gallery
           </Link>
           <Link
             to="/HolidayChart"
-            style={{ ...linkStyles, backgroundColor: "#DFF3E3" }}
+            style={{ ...linkStyles, backgroundColor: "#ACF39D" }}
           >
             Holiday Chart
           </Link>
           <Link
             to="/contact"
-            style={{ ...linkStyles, backgroundColor: "#EFE2CF" }}
+            style={{ ...linkStyles, backgroundColor: "#773344" }}
           >
             Contact Us
           </Link>
           <Link
             to="/signup"
-            style={{ ...linkStyles, backgroundColor: "#FFD1BA" }}
+            style={{ ...linkStyles, backgroundColor: "#9CFFFA" }}
           >
             Registration
           </Link>

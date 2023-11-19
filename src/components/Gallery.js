@@ -19,14 +19,11 @@ import photo12 from "../images/kids/12.jpg";
 import photo23 from "../images/kids/23.jpg";
 import photo13 from "../images/kids/13.jpg";
 import photo24 from "../images/kids/24.jpg";
-import photo14 from "../images/kids/14.jpg";
+
 import photo25 from "../images/kids/25.jpg";
-import photo15 from "../images/kids/15.jpg";
+
 import photo26 from "../images/kids/26.jpg";
-import photo16 from "../images/kids/16.jpg";
-import photo17 from "../images/kids/17.jpg";
-import photo18 from "../images/kids/18.jpg";
-import photo19 from "../images/kids/19.jpg";
+
 import Header from "./header";
 
 const Gallery = () => {
@@ -47,12 +44,7 @@ const Gallery = () => {
     photo11,
     photo12,
     photo13,
-    photo14,
-    photo15,
-    photo16,
-    photo17,
-    photo18,
-    photo19,
+
     photo20,
 
     photo22,

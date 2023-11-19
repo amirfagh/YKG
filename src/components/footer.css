@@ -1,5 +1,5 @@
 footer {
-    background-color: #333;
+    background-color: #b84242;
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px 0;
@@ -36,17 +36,17 @@ footer {
     }
   }
   .social-link.facebook {
-    color: #1877f2; /* Facebook blue color */
+    color: #024091; /* Facebook blue color */
     &:hover {
-      color: #0f43b4; /* Darker Facebook blue on hover */
+      color: #042a7e; /* Darker Facebook blue on hover */
     }
   }
   
   /* Style for Instagram link */
   .social-link.instagram {
-    color: #bc2a8d; /* Instagram purple color */
+    color: #930365; /* Instagram purple color */
     &:hover {
-      color: #76195c; /* Darker Instagram purple on hover */
+      color: #55003d; /* Darker Instagram purple on hover */
     }
   }
   

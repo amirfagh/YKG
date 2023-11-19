@@ -1,4 +1,4 @@
-/* styles.css (or your preferred CSS file) */
+
 
 .holiday-chart-container {
     max-width: 800px;
@@ -14,9 +14,11 @@
   
   .holiday-chart-container img {
     width: 100%;
-    max-width:100%;
+    max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
-  }
+    filter: brightness(0.8); /* Adjust the value to darken or lighten (0.0 to 1.0) */
+}
+
   

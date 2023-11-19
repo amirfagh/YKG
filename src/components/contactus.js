@@ -3,8 +3,6 @@ import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import Header from "./header";
 import Footer from "./footer";
-// npm i @emailjs/browser
-import image from "../images/background2.jpg";
 const Contact = () => {
   const form = useRef();
 
@@ -13,10 +11,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_lw6k5im",
-        "template_02hbll8",
+        "service_naeq6hx",
+        "template_ixsgkjx",
         form.current,
-        "UW8UJDeodFGKb9pRF"
+        "mNn0OqkJvOYhrl3gX"
       )
       .then(
         (result) => {
@@ -44,7 +42,13 @@ const Contact = () => {
           <input type="tel" name="phone_number" required />
           <label>Message</label>
           <textarea name="message" required />
+
           <input type="submit" value="Send" />
+          <div className="contact-info">
+            <span>Email: kindergarten@ymca.org.il</span>
+            <span>Phone: 02-5692681</span>
+            <span>Address: King David Street 26, Jerusalem</span>
+          </div>
         </form>
         <Footer />
       </StyledContactForm>
@@ -52,20 +56,12 @@ const Contact = () => {
   );
 };
 
-export default Contact;
-
-// Styles
 const StyledContactForm = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Align items vertically between Header and Footer */
-  height: 100vh; /* 100% of the viewport height */
+  justify-content: space-between;
+  height: 100vh;
 
-  /*background-image: url(${image});
-  background-size: cover; 
-  background-repeat: no-repeat;
-  background-position: center center;
-*/
   form {
     display: flex;
     align-items: flex-start;
@@ -73,6 +69,7 @@ const StyledContactForm = styled.div`
     width: 50%;
     font-size: 16px;
     margin-left: 20%;
+
     input {
       width: 100%;
       height: 35px;
@@ -106,12 +103,25 @@ const StyledContactForm = styled.div`
       margin-top: 1rem;
     }
 
+    .contact-info {
+      margin-top: 2rem;
+      font-size: 20px;
+      font-weight: bold;
+
+      span {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+    }
+
     input[type="submit"] {
       margin-top: 2rem;
       cursor: pointer;
-      background: rgb(51, 51, 51);
+      background: rgb(184, 66, 66);
       color: white;
       border: none;
     }
   }
 `;
+
+export default Contact;

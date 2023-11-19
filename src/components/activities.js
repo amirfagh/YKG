@@ -5,16 +5,20 @@ import swimmingImage1 from "../images/swim3.jpg";
 import swimmingImage2 from "../images/swim4.jpg";
 import yogaImage1 from "../images/yoga1.jpg";
 import yogaImage2 from "../images/yoga3.jpg";
-import musicImage1 from "../images/holdays2.png";
-import musicImage2 from "../images/circle.png";
+import musicImage1 from "../images/music2.jpg";
+import musicImage2 from "../images/music3.jpg";
 import natureImage1 from "../images/nature2.jpg";
 import natureImage2 from "../images/nature3.jpg";
 
 const Activities = () => {
   return (
-    <div>
+    <div className="main-container">
       <Header />
-      <h1 className="activities-title">Our Activities</h1>
+      <div className="hero-section1">
+        <div className="hero-text1">
+          <h1>Our Activities</h1>
+        </div>
+      </div>
       <div className="activitiees">
         <div className="activity">
           <h3>Swimming</h3>

@@ -1,6 +1,6 @@
 /* Header Styles */
 header {
-  background-color: #333;
+  background-color: #b84242;
   color: #fff;
   padding: 10px 0;
   display: flex;
@@ -29,11 +29,11 @@ font-weight: bold;
 }
 
 /* Link Colors */
-.aboutus { background-color: #FF5733; }
-.activities { background-color: #FFC300; }
-.dailyschedule { background-color: #C70039; }
-.staffpage { background-color: #900C3F; }
-.gallery { background-color: #581845; }
+.aboutus { background-color: #006BA6; }
+.activities { background-color: #0083E0; }
+.dailyschedule { background-color: #F8DF00; }
+.staffpage { background-color: #D81159; }
+.gallery { background-color: #8F2D56; }
 .holidays { background-color: #900C3F; }
 .contact { background-color: #C70039; }
 .signup { background-color: #FFC300; }
@@ -43,7 +43,7 @@ img.logo {
 width: 100px;
 height: 100px;
 margin-right: 20px;
-}
+}   
 
 /* YMCA and YMCA Kindergarten Logo Styles */
 img.ymca-logo,

@@ -30,7 +30,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="social-media-links">
           <a
-            href="https://www.instagram.com/amirghareeb/"
+            href="https://www.instagram.com/jerusalemymcakg/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link instagram"

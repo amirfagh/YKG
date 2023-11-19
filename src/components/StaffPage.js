@@ -9,13 +9,16 @@ import staff7 from "../images/drive/print/IMG_5671.JPG";
 import staff9 from "../images/drive/IMG_5590.JPG";
 import staff10 from "../images/drive/IMG_5592.JPG";
 import staff11 from "../images/drive/print/IMG_5662.JPG";
-import staff12 from "../images/drive/IMG_5665.JPG";
+import staff12 from "../images/drive/reham.jpg";
 import staff13 from "../images/drive/IMG_5667(1).JPG";
 import staff14 from "../images/drive/IMG_5668(1).JPG";
 import staff15 from "../images/drive/print/IMG_5585.JPG";
 import staff16 from "../images/drive/print/IMG_5579.JPG";
 import staff17 from "../images/drive/print/IMG_5587.JPG";
 import staff18 from "../images/drive/print/IMG_0920.JPG";
+import staff19 from "../images/drive/gn2.jpg";
+import staff20 from "../images/drive/gn3.jpg";
+import staff21 from "../images/drive/gn1.jpg";
 import "./staff.css";
 import Header from "./header";
 
@@ -23,51 +26,101 @@ const staffMembers = [
   {
     id: 18,
     name: "Rawan",
-    job: "Assistant Teacher",
-    experience: "5+ years of teaching experience",
+    job: "Kidnergarten Director",
+    experience: "PhD. in Education",
     profilePicture: staff18,
   },
   {
-    id: 1,
-    name: "Manal",
-    job: "Certificated Teacher",
-    experience: "10+ years of teaching experience",
-    profilePicture: staff1,
+    id: 17,
+    name: "Masha",
+    job: "Certificated Teacher for the babies group",
+    experience: "33 years of teaching experience",
+    profilePicture: staff17,
+  },
+  {
+    id: 4,
+    name: "Monica",
+    job: "M.A in Education for the toddlers group",
+    experience: "28 years of teaching experience",
+    profilePicture: staff4,
+  },
+  {
+    id: 6,
+    name: "Fida'a",
+    job: "Certificated Teacher for the toddlers group",
+    experience: "20 years of teaching experience",
+    profilePicture: staff6,
   },
   {
     id: 2,
     name: "Nujud",
-    job: "Assistant Teacher",
-    experience: "5+ years of teaching experience",
+    job: "Certificated Teacher for the toddlers group ",
+    experience: "16 years of teaching experience",
     profilePicture: staff2,
   },
   {
     id: 3,
     name: "Sara",
-    job: "Assistant Teacher",
-    experience: "5+ years of teaching experience",
+    job: "Certificated Teacher for the babies group",
+    experience: "16 years of teaching experience",
     profilePicture: staff3,
   },
   {
-    id: 4,
-    name: "Monica",
-    job: "Assistant Teacher",
-    experience: "5+ years of teaching experience",
-    profilePicture: staff4,
+    id: 19,
+    name: "Angela",
+    job: "Certificated Teacher for the babies & toddlers group",
+    experience: "11 years of teaching experience",
+    profilePicture: staff20,
   },
+  {
+    id: 20,
+    name: "Suha",
+    job: "Certificated Teacher for the toddlers group",
+    experience: "10 years of teaching experience",
+    profilePicture: staff21,
+  },
+  {
+    id: 1,
+    name: "Manal",
+    job: "Certificated Teacher for ages 2-3",
+    experience: "10 years of teaching experience",
+    profilePicture: staff1,
+  },
+
   {
     id: 5,
     name: "Rania",
-    job: "Assistant Teacher",
-    experience: "5+ years of teaching experience",
+    job: "Certificated Teacher for the toddlers group",
+    experience: "10 years of teaching experience",
     profilePicture: staff5,
   },
   {
-    id: 6,
-    name: "Fida'a",
-    job: "Assistant Teacher",
-    experience: "5+ years of teaching experience",
-    profilePicture: staff6,
+    id: 10,
+    name: "Ola",
+    job: "Certificated Teacher for the babies group",
+    experience: "10 years of teaching experience",
+    profilePicture: staff10,
+  },
+  {
+    id: 11,
+    name: "Wijdan",
+    job: "Certificated Teacher for the babies group",
+    experience: " 10 years of teaching experience",
+    profilePicture: staff11,
+  },
+  {
+    id: 13,
+    name: "Tatyana",
+    job: "Certificated Teacher for the toddlers group",
+    experience: "10 years of teaching experience",
+    profilePicture: staff13,
+  },
+  {
+    id: 16,
+    name: "Kighan",
+    job: "Certificated Teacher for the toddlers group",
+    experience: "10 years of teaching experience",
+    profilePicture: staff16,
   },
   {
     id: 7,
@@ -76,70 +129,42 @@ const staffMembers = [
     experience: "5+ years of teaching experience",
     profilePicture: staff7,
   },
-
-  {
-    id: 9,
-    name: "Mirvat",
-    job: "Assistant Teacher",
-    experience: "5+ years of teaching experience",
-    profilePicture: staff9,
-  },
-  {
-    id: 10,
-    name: "Ola",
-    job: "Assistant Teacher",
-    experience: "5+ years of teaching experience",
-    profilePicture: staff10,
-  },
-  {
-    id: 11,
-    name: "Wijdan",
-    job: "Assistant Teacher",
-    experience: "5+ years of teaching experience",
-    profilePicture: staff11,
-  },
-
   {
     id: 12,
     name: "Riham",
-    job: "Assistant Teacher",
-    experience: "5+ years of teaching experience",
+    job: "B.A in Education for age 3-4",
+    experience: "3 years of teaching experience",
     profilePicture: staff12,
   },
   {
-    id: 13,
-    name: "Tatyana",
-    job: "Assistant Teacher",
-    experience: "5+ years of teaching experience",
-    profilePicture: staff13,
+    id: 9,
+    name: "Mirvat",
+    job: "Certificated Teacher for the babies group",
+    experience: "2 years of teaching experience",
+    profilePicture: staff9,
   },
+
   {
     id: 14,
     name: "Ghada",
-    job: "Assistant Teacher",
-    experience: "5+ years of teaching experience",
+    job: "Certificated Teacher for babies and toddlers",
+    experience: "2 years of teaching experience",
     profilePicture: staff14,
   },
   {
     id: 15,
     name: "Maria",
-    job: "Assistant Teacher",
-    experience: "5+ years of teaching experience",
+    job: "B.A in Education for the toddlers group",
+    experience: "2 years of teaching experience",
     profilePicture: staff15,
   },
+
   {
-    id: 16,
-    name: "Kighan",
-    job: "Assistant Teacher",
-    experience: "5+ years of teaching experience",
-    profilePicture: staff16,
-  },
-  {
-    id: 17,
-    name: "Masha",
-    job: "Assistant Teacher",
-    experience: "5+ years of teaching experience",
-    profilePicture: staff17,
+    id: 18,
+    name: "Nahida",
+    job: "B.A in Education for the toddlers group ",
+    experience: "2 years of experience",
+    profilePicture: staff19,
   },
 ];
 
