@@ -5,7 +5,7 @@ import Footer from "./footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import image1 from "../images/ymca2.webp";
-import image2 from "../images/pool.jpg";
+import image2 from "../images/ymca3.webp";
 
 const YMCA = () => {
   return (

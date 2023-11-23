@@ -71,3 +71,62 @@ h3 {
     padding: 20px 0;
     text-align: center;
 }
+/* main.css */
+
+/* Add these styles for small screens */
+/* main.css */
+
+/* Add these styles for small screens */
+@media only screen and (max-width: 768px) {
+    .image-section {
+      display: none; /* Hide the image section on small screens */
+    }
+  
+    .text-section {
+      width: 100%; /* Make the text section take full width on small screens */
+    }
+  
+    .hero-section2 {
+      width: 100%; /* Make the hero section take full width on small screens */
+      height: 40vh; /* Adjust the height as needed */
+    }
+  
+    .hero-text2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      font-size: 24px; /* Adjust font size for smaller screens */
+    }
+  
+    .social-media-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .ymca-international-social,
+    .ymca-sport-center-social {
+      display: flex;
+      margin-top: 10px;
+    }
+  
+    .ymca-international-social a,
+    .ymca-sport-center-social a {
+      margin-right: 15px;
+    }
+  
+    .ymca-international-social a svg[data-icon="instagram"],
+    .ymca-sport-center-social a svg[data-icon="instagram"] {
+      color: #ad4ae6; /* Instagram purple color */
+    }
+  
+    .ymca-sport-center-social a svg[data-icon="facebook"],
+    .ymca-international-social a svg[data-icon="facebook"] {
+      color: #1877f2; /* Facebook blue color */
+    }
+  }
+  
+  

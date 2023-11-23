@@ -1,3 +1,4 @@
+// Main.js
 import React from "react";
 import "./main.css";
 import Header from "./header";
@@ -8,13 +9,15 @@ import logo3 from "../images/diver.jpg";
 import logo4 from "../images/kid12.jpg";
 import backgroundImage from "../images/mian9.jpg";
 import backgroundImage2 from "../images/main6.jpg";
-import backgroundImage3 from "../images/main7.jpg";
+import backgroundImage3 from "../images/main1.jpg";
 
 const Main = () => {
   return (
     <div className="main-container">
       <Header />
-      <p className="image-text">Jerusalem International YMCA-Kindergarten</p>
+      <div className="image-text-container">
+        <p className="image-text">Jerusalem International YMCA-Kindergarten</p>
+      </div>
       <main className="image-container">
         <img
           src={backgroundImage}

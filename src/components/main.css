@@ -135,12 +135,14 @@ body, html {
   height: 80px;
   width: 200px;
   margin: 30px;
+  margin-right: 60px;
 }
 .info-box2 {
   text-align: center;
   height: 100px;
-  width: 300px;
+  width: 200px;
   margin: 30px;
+  margin-right: 60px;
 }
 
 .logo {
@@ -176,17 +178,19 @@ body, html {
   color: white;
 }
 
+.image-text-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 1vh;
+}
+
 .image-text {
   font-size: 2.5em;
   margin-bottom: 10px;
   color: #0c0b0b;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -650%);
   font-weight: bold;
 }
-
 
 .button {
   padding: 10px 20px;
@@ -197,3 +201,73 @@ body, html {
   cursor: pointer;
   text-decoration: none;
 }
+/* main.css */
+/* ... (existing styles) */
+
+/* Responsive Styles for Small Screens */
+@media only screen and (max-width: 768px) {
+  .info-container {
+    flex-direction: column; /* Change flex direction to column on small screens */
+    align-items: center; /* Center items horizontally on small screens */
+    margin-bottom: 300px; /* Adjust margin for spacing on small screens */
+  }
+
+  .info-box,
+  .info-box2 {
+    width: 80%; /* Adjust width for better responsiveness on small screens */
+    height: 20%;
+    margin: 10px 0; /* Adjust margin for spacing on small screens */
+  }
+
+  .image-container {
+    flex-direction: column; /* Stack images in a column on small screens */
+    
+  }
+
+  .background-image {
+    width: 100%; /* Adjust width to cover the entire width on small screens */
+    height: 30%; /* Set height for each image on small screens */
+    margin-right: 0; /* Remove margin for spacing on small screens */
+    margin-bottom: 10px; /* Adjust margin for spacing between images on small screens */
+  }
+
+  
+
+  .image-text-container {
+    display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 1vh;
+  
+  }
+
+  .image-text {
+    font-size: 1.9em; /* Adjust font size for better readability on small screens */
+    text-align: center;
+  }
+  .activitiees {
+    flex-direction: column; /* Change flex direction to column on small screens */
+    align-items: center; /* Center items horizontally on small screens */
+  }
+
+  .activity {
+    width: 100%; /* Set the width to 100% for single-column layout on small screens */
+    margin-bottom: 20px; /* Add margin for spacing between activities on small screens */
+  }
+
+  .activity-images {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+  }
+
+  .activity-images img {
+    width: 150px; /* Set a specific width for the circular images */
+    height: 150px; /* Set a specific height for the circular images */
+    object-fit: cover; /* Ensure images maintain their aspect ratio within the specified dimensions */
+    border-radius: 50%; /* Make the images circular */
+    margin: 5px; /* Add margin between circular images */
+  }
+}
+
+
+

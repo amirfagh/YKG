@@ -10,6 +10,7 @@ import HolidayChart from "./components/HolidayChart";
 import Gallery from "./components/Gallery";
 import DailySchedule from "./components/DailySchedule";
 import Activities from "./components/activities";
+import Donations from "./components/donation";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/DailySchedule" element={<DailySchedule />} />
         <Route path="/activities" element={<Activities />} />
+        <Route path="/donation" element={<Donations />} />
       </Routes>
     </Router>
   );

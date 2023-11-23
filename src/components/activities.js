@@ -42,7 +42,7 @@ const Activities = () => {
           </div>
         </div>
         <div className="activity">
-          <h3>Exploring the Nature</h3>
+          <h3>Exploring Nature</h3>
           <div className="activity-images">
             <img src={natureImage1} alt="Nature 1" />
             <img src={natureImage2} alt="Nature 2" />

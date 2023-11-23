@@ -3,8 +3,10 @@ import "./signup.css"; // Import your CSS file for styling
 
 import Header from "./header";
 import Footer from "./footer";
-import image from "../images/kids17.avif";
+import imageLarge from "../images/kids17.avif";
+import imageSmall from "../images/kids15.jpg";
 const Signup = () => {
+  const isSmallScreen = () => window.innerWidth <= 768;
   return (
     <div className="main-container2">
       <Header />
@@ -12,7 +14,7 @@ const Signup = () => {
       <main>
         <div className="registration-header">
           <img
-            src={image} // Replace with the actual path to your header photo
+            src={isSmallScreen() ? imageSmall : imageLarge}
             alt="Registration Header"
           />
           <h2>Registration</h2>

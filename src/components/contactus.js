@@ -105,6 +105,7 @@ const StyledContactForm = styled.div`
 
     .contact-info {
       margin-top: 2rem;
+      margin-bottom: 25rem;
       font-size: 20px;
       font-weight: bold;
 
