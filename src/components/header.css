@@ -13,6 +13,7 @@ header {
 nav {
   display: flex;
   align-items: center;
+  
 }
 
 /* Link Styles */
@@ -29,20 +30,28 @@ nav {
 
 /* Link Colors (Add your own colors) */
 .aboutus { background-color: #006BA6; }
-.activities { background-color: #0083E0; }
-.dailyschedule { background-color: #F8DF00; }
-.staffpage { background-color: #D81159; }
-.gallery { background-color: #8F2D56; }
-.holidays { background-color: #900C3F; }
-.contact { background-color: #C70039; }
-.signup { background-color: #FFC300; }
-.donation { background-color: #9CFFFA; }
+.activities { background-color: #F8DF00; }
+
+.staffpage { background-color: #900C3F; }
+
+.gallery { background-color: #9CFFFA; }
+.holidays { background-color: #8F2D56; }
+.contact { background-color: #0083E0; }
+.signup { background-color: #C70039; }
+.donation { background-color: #FFC300; }
 
 /* Logo Styles */
 .logo {
   width: 80px;
   height: 60px;
-  margin: 0;
+  vertical-align: middle;
+  margin-right: 10px;
+  
+}
+.logo23 {
+  width: 80px;
+  height: 60px;
+  vertical-align: middle;
   margin-right: 10px;
   
 }
@@ -51,26 +60,74 @@ nav {
 .ymca-logo {
   width: 60px;
 height: 50px;
-margin: 0;
+vertical-align: middle;
 margin-left: 10px;
 
 }
 
-/* Responsive Styles */
+.menu-icon {
+  display: none; /* Hide the icon by default for larger screens */
+  cursor: pointer;
+  margin-left: auto;
+  padding: 10px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
 @media only screen and (max-width: 768px) {
-  /* Adjust font size for navigation links on smaller screens */
-  .nav-link {
-    font-size: 14px;
+  /* Display the hamburger icon and hide navigation links for smaller screens */
+  .menu-icon {
+    display: block;
+    margin-left: 100%; 
+    padding: 10px;
   }
 
-  /* Adjust logo sizes for smaller screens */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: #b84242;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-link {
+    margin: 0;
+    text-align: center;
+  }
+
+  /* Adjust font size for navigation links on smaller screens */
+  .nav-link {
+    font-size: 16px;
+  }
+
+  /* Adjust logo sizes for smaller screens and center them */
   .logo {
     width: 80px;
     height: 80px;
+    margin: 0 auto; /* Center the logo */
+  }
+  .logo23 {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto; /* Center the logo */
+    margin-left: 20%;
   }
 
   .ymca-logo {
     width: 40px;
     height: 40px;
+    margin: 0 auto; /* Center the logo */
   }
 }

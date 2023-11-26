@@ -1,8 +1,6 @@
 import React from "react";
-import "./signup.css"; // Import your CSS file for styling
-
+import "./signup.css";
 import Header from "./header";
-import Footer from "./footer";
 import imageLarge from "../images/kids17.avif";
 import imageSmall from "../images/kids15.jpg";
 const Signup = () => {
@@ -37,8 +35,6 @@ const Signup = () => {
 
         {/* The rest of your signup form can go here */}
       </main>
-
-      <Footer />
     </div>
   );
 };

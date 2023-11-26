@@ -3,12 +3,12 @@ import React from "react";
 import "./main.css";
 import Header from "./header";
 import Footer from "./footer";
-import logo1 from "../images/safa.jpg";
-import logo2 from "../images/bird4.png";
-import logo3 from "../images/diver.jpg";
-import logo4 from "../images/kid12.jpg";
+import logo1 from "../images/safa2.jpg";
+import logo2 from "../images/bird42.png";
+import logo3 from "../images/diver2.jpg";
+import logo4 from "../images/kid122.jpg";
 import backgroundImage from "../images/mian9.jpg";
-import backgroundImage2 from "../images/main6.jpg";
+import backgroundImage2 from "../images/main2.jpg";
 import backgroundImage3 from "../images/main1.jpg";
 
 const Main = () => {
@@ -16,7 +16,7 @@ const Main = () => {
     <div className="main-container">
       <Header />
       <div className="image-text-container">
-        <p className="image-text">Jerusalem International YMCA-Kindergarten</p>
+        <p className="image-text">Jerusalem International YMCA Kinder Garten</p>
       </div>
       <main className="image-container">
         <img

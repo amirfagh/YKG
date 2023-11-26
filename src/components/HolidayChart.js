@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./header";
 
-import Holiday from "../images/holdays2.png";
+import Holiday from "../images/holdays22.png";
 import "./HolidayChart.css";
 const HolidayChart = () => {
   return (

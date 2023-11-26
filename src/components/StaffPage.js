@@ -15,7 +15,7 @@ import staff14 from "../images/drive/IMG_5668(1).JPG";
 import staff15 from "../images/drive/print/IMG_5585.JPG";
 import staff16 from "../images/drive/print/IMG_5579.JPG";
 import staff17 from "../images/drive/print/IMG_5587.JPG";
-import staff18 from "../images/drive/print/IMG_0920.JPG";
+import staff18 from "../images/drive/print/IMG_09202.jpg";
 import staff19 from "../images/drive/gn2.jpg";
 import staff20 from "../images/drive/gn3.jpg";
 import staff21 from "../images/drive/gn1.jpg";

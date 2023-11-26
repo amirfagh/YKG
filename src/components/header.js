@@ -1,27 +1,39 @@
 // Header.js
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
 import ymcaLogo from "../images/oldlogo22.png";
 import ymcaLogo2 from "../images/logoy.png";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <header>
       <nav>
         <Link to="/">
-          <img src={ymcaLogo} alt="YMCA Logo" className="logo" />
+          <img src={ymcaLogo} alt="YMCA Logo" className="logo23" />
         </Link>
-        <div className="nav-links">
+
+        <div className="menu-icon" onClick={toggleMenu}>
+          <div className={`bar ${menuOpen ? "open" : ""}`} />
+          <div className={`bar ${menuOpen ? "open" : ""}`} />
+          <div className={`bar ${menuOpen ? "open" : ""}`} />
+        </div>
+
+        {/* Navigation links for larger screens */}
+        <div className={`nav-links ${menuOpen ? "open" : ""}`}>
           <Link to="/aboutus" className="nav-link aboutus">
             About Us
           </Link>
           <Link to="/activities" className="nav-link activities">
             Our Activities
           </Link>
-          <Link to="/DailySchedule" className="nav-link dailyschedule">
-            Daily Schedule
-          </Link>
+
           <Link to="/StaffPage" className="nav-link staffpage">
             Our Staff
           </Link>
@@ -40,10 +52,16 @@ const Header = () => {
           <Link to="/donation" className="nav-link donation">
             Donation
           </Link>
+          {window.innerWidth <= 768 ? (
+            <Link to="/ymca" className="nav-link">
+              YMCA
+            </Link>
+          ) : (
+            <Link to="/ymca">
+              <img src={ymcaLogo2} alt="YMCA Logo" className="ymca-logo" />
+            </Link>
+          )}
         </div>
-        <Link to="/ymca">
-          <img src={ymcaLogo2} alt="YMCA Logo" className="ymca-logo" />
-        </Link>
       </nav>
     </header>
   );

@@ -1,4 +1,4 @@
-/* gallery.css */
+
 
 .gallery-container {
     max-width: 100%;
@@ -18,4 +18,8 @@
     height: auto;
     object-fit: cover;
   }
-  
+  @media (max-width: 600px) {
+    .modal {
+      display: none !important; /* Important to override modal styles */
+    }
+  }

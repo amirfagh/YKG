@@ -16,9 +16,9 @@
     width: 100%;
     max-width: 100%;
     height: auto;
-    display: block;
+    display: flex;
     margin: 0 auto;
-    filter: brightness(0.8); /* Adjust the value to darken or lighten (0.0 to 1.0) */
+    
 }
 
   

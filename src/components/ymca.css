@@ -74,9 +74,6 @@ h3 {
 /* main.css */
 
 /* Add these styles for small screens */
-/* main.css */
-
-/* Add these styles for small screens */
 @media only screen and (max-width: 768px) {
     .image-section {
       display: none; /* Hide the image section on small screens */
@@ -89,15 +86,15 @@ h3 {
     .hero-section2 {
       width: 100%; /* Make the hero section take full width on small screens */
       height: 40vh; /* Adjust the height as needed */
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   
     .hero-text2 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       margin: 0;
       font-size: 24px; /* Adjust font size for smaller screens */
+      text-align: center; /* Center the text horizontally */
     }
   
     .social-media-links {
@@ -106,7 +103,9 @@ h3 {
       align-items: center;
       margin-top: 20px;
     }
-  
+    .social-media-links h2{
+        text-align: center;
+    }
     .ymca-international-social,
     .ymca-sport-center-social {
       display: flex;
@@ -128,5 +127,4 @@ h3 {
       color: #1877f2; /* Facebook blue color */
     }
   }
-  
   

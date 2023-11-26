@@ -3,8 +3,9 @@ import "./about.css"; // Import your CSS file for styling
 import Header from "./header";
 import Footer from "./footer";
 import image1 from "../images/swim1.jpg";
-import image2 from "../images/yoga1.jpg";
+import image2 from "../images/about2.jpg";
 import image from "../images/circle.png";
+
 const About = () => {
   return (
     <div className="main-container">
@@ -14,8 +15,8 @@ const About = () => {
         <div className="content">
           <div className="flex-container">
             <div className="image-section">
-              <img src={image1} alt="First Imergage" />
-              <img src={image2} alt="Second Iermage" />
+              <img src={image1} alt="Firse" />
+              <img src={image2} alt="Secoage" />
             </div>
             <div className="text-section">
               <p>
@@ -77,7 +78,27 @@ const About = () => {
                   </li>
                 </ul>
               </p>
-              <p>The preschool is open 6 days a week 7:30-16:00.</p>
+              <p>
+                The YMCA kindergarten includes 7 classrooms:
+                <ul>
+                  <li>Babies 1: 3 months - 9 months</li>
+                  <li>Babies 2: 11 months - 1.1</li>
+                  <li>Toddlers 1: 1.2 years – 1.6 years</li>
+                  <li>Toddlers 2 : 1.7 years – 1.10</li>
+                  <li>2 years 1: 1.11 years – 2.3 years</li>
+                  <li>2 years 2 : 2.4 years – 2.7 years</li>
+                  <li>3-4 years : 2.8 years – 3 years</li>
+                </ul>
+              </p>
+              <p>
+                The kindergarten works from September-July.
+                <br />
+                Sunday-Friday 7:30-16:00
+                <br />
+                Friday 7:30-12:30
+                <br />
+                August is the summer camp.
+              </p>
               <h1 className="activities-title">
                 Developmental areas of children
               </h1>

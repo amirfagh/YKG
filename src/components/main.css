@@ -190,6 +190,7 @@ body, html {
   margin-bottom: 10px;
   color: #0c0b0b;
   font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .button {
@@ -244,6 +245,7 @@ body, html {
   .image-text {
     font-size: 1.9em; /* Adjust font size for better readability on small screens */
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
   }
   .activitiees {
     flex-direction: column; /* Change flex direction to column on small screens */

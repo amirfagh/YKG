@@ -29,6 +29,7 @@
 .registration-info {
   max-width: 600px;
   margin: 0 auto;
+  margin-bottom: 50%;
 }
 
 .registration-info p {
@@ -40,17 +41,31 @@
 /* Media query for small screens */
 
 @media only screen and (max-width: 768px) {
+  .registration-header {
+    display: none;
+  }
   .registration-header h2 {
+    display: none;
     font-size: 28px; /* Adjust font size for smaller screens */
   }
   .registration-info p {
     font-size: 20px; /* Adjust font size for smaller screens */
   }
   .registration-header img {
-    width: 100%; /* Ensure the image takes up the full width of its container */
-    height: auto; /* Allow the image to maintain its aspect ratio */
-    display: block; /* Ensure the image is displayed as a block element */
-    margin: 0 auto; /* Center the image horizontally */
-    margin-bottom: 40px;
+    display: none;
   }
+  .registration-info {
+    background-image: url('../images/kids15.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px; 
+  
+  }
+  .registration-info p {
+    text-align: center;
+  font-size: 42px;
+  line-height: 1.5;
+  color: #000;
+  }
+  
 }
