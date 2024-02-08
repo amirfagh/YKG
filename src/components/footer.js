@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+
 import "./footer.css";
 const Footer = () => {
   useEffect(() => {
@@ -29,15 +28,6 @@ const Footer = () => {
     <footer>
       <div className="footer-content">
         <div className="social-media-links">
-          <a
-            href="https://www.instagram.com/jerusalemymcakg/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-link instagram"
-          >
-            <FontAwesomeIcon icon={faInstagram} size="2x" />
-            <span className="follow-text">Follow Us on Instagram</span>
-          </a>
           <p className="green-text">
             Location: King David Street 26, Jerusalem
           </p>{" "}
@@ -45,15 +35,6 @@ const Footer = () => {
           <p className="green-text">
             @2023 | YMCA Kindergarten | Created and designed by Amir Ghareeb{" "}
           </p>
-          <a
-            href="https://www.facebook.com/YMCALeirPreschool"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-link facebook"
-          >
-            <FontAwesomeIcon icon={faFacebook} size="2x" />
-            <span className="follow-text">Follow Us on Facebook</span>
-          </a>
         </div>
       </div>
     </footer>
