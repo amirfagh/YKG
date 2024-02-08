@@ -36,9 +36,7 @@ const Header = () => {
           <Link to="/StaffPage" className="nav-link staffpage">
             Our Staff
           </Link>
-          <Link to="/Gallery" className="nav-link gallery">
-            Gallery
-          </Link>
+
           <Link to="/HolidayChart" className="nav-link holidays">
             Holiday Chart
           </Link>
