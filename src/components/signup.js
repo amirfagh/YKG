@@ -29,7 +29,6 @@ const Signup = () => {
             >
               here
             </a>{" "}
-            to access the registration form on Google Docs.
           </p>
         </div>
 

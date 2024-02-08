@@ -19,67 +19,83 @@ const About = () => {
               <img src={image2} alt="Secoage" />
             </div>
             <div className="text-section">
+              <h1 className="activities-title2">
+                The Erna and Henry Leir Peace preschool
+              </h1>
               <p>
-                The Erna and Henry Leir Peace preschool was founded in 1982.
-                Each year, more than eighty Jewish, Muslim, and Christian
-                children aged 3 months – 4 years attend the preschool where they
-                learn together is classes that each have a Hebrew and Arabic
-                speaking teacher. The children are raised in an environment of
-                natural partnership.
+                Founded in 1982, the Erna and Henry Leir Peace Preschool at the
+                Jerusalem International YMCA is a beacon of unity and learning.
+                Welcoming children from Christian, Jewish, and Muslim
+                backgrounds, we nurture children aged 3 months to 4 years. Our
+                unique educational approach includes bilingual classes, with
+                each class led by both a Hebrew-speaking and an Arabic-speaking
+                teacher. This fosters a natural environment of partnership and
+                mutual respect.
+              </p>
+              <h1 className="activities-title2">
+                Living the Dream of a Harmonious Tomorrow
+              </h1>
+              <p>
+                Our preschool is more than just a learning environment; it's a
+                place where families and staff collaboratively live the dream of
+                a peaceful, unified future. We believe in the power of early
+                education to bridge cultural divides and lay the foundation for
+                a better world.
+              </p>
+              <h1 className="activities-title2">
+                Celebrating Diversity Through Festivities
+              </h1>
+              <p>
+                We embrace and celebrate the diverse cultural and religious
+                backgrounds of our students. Our festivities include creating
+                greeting cards for the Jewish New Year, decorating the Christmas
+                tree, and baking sweets for Eid al-Fitr. These celebrations are
+                often shared with parents, bringing immense joy and excitement
+                to our community.
+              </p>
+              <h1 className="activities-title2">
+                Focus on Holistic Development
+              </h1>
+              <p>
+                At the core of our philosophy is the emphasis on each child's
+                emotional, social, and cognitive development. Our approach is
+                tailored to nurture every aspect of a child's growth.
               </p>
               <p>
-                The preschool families and staff live today the dream of a
-                better tomorrow for all of us.
-              </p>
-              <p>
-                We celebrate the Jewish, Muslim, and Christian holidays. The
-                children prepare greeting cards for the Jewish New Year,
-                decorate the Christmas tree and bake sweets for Id al Fitr.
-                Manty more holidays are celebrated in this manner, sometimes
-                with the parents to everyone's delight and excitement.
-              </p>
-              <p>
-                The preschool puts special emphasis on the emotional, social and
-                pedagogical development of each child.
-              </p>
-              <p>
-                In our kindergarten you will find:
+                Features of Our Kindergarten
                 <ul>
                   <li>
-                    A very responsible, dedicated and experienced staff who
-                    gives an abundance of warmth and love working according to a
-                    rich educational and developmental program.
+                    A team of responsible, dedicated, and experienced staff who
+                    provide abundant warmth, love, and a rich educational
+                    program.
                   </li>
                   <li>
-                    Professional accompaniment and guidance on a daily basis, by
-                    the director of the kindergarten and by a pedagogical
-                    supervisor.
+                    Daily professional guidance by the kindergarten director and
+                    a pedagogical supervisor.
                   </li>
                   <li>
-                    An enrichment program that includes unique classes,
-                    activities and games aimed at motor, cognitive, emotional
-                    and social development.
+                    An enrichment program with activities and games for motor,
+                    cognitive, emotional, and social development.
                   </li>
                   <li>
-                    Small size groups, which allow attention and personal
-                    treatment to be given to each child according to his needs.
+                    Small group sizes to ensure personalized attention and care.
                   </li>
                   <li>
-                    A rich food menu accompanied by a child clinical
+                    A nutritious food menu, overseen by a child clinical
                     nutritionist.
                   </li>
                   <li>
-                    Closed-circuit security cameras and personal insurance for
-                    each child
+                    Security measures including cameras and personal insurance
+                    for each child.
                   </li>
                   <li>
-                    A warm, happy and enveloping atmosphere as little ones and
-                    their parents need and love.
+                    A warm, joyful, and nurturing environment cherished by
+                    children and parents alike.
                   </li>
                 </ul>
               </p>
               <p>
-                The YMCA kindergarten includes 7 classrooms:
+                Classroom Structure
                 <ul>
                   <li>Babies 1: 3 months - 9 months</li>
                   <li>Babies 2: 11 months - 1.1</li>
@@ -90,14 +106,14 @@ const About = () => {
                   <li>3-4 years : 2.8 years – 3 years</li>
                 </ul>
               </p>
+
               <p>
-                The kindergarten works from September-July.
+                Annual scheduale
+                <p>The preschool operates from September-July.</p>
                 <br />
-                Sunday-Friday 7:30-16:00
+                Sunday-Friday 7:30-16:00 Friday 7:30-12:30
                 <br />
-                Friday 7:30-12:30
-                <br />
-                August is the summer camp.
+                August is reserved for our exciting summer camp.
               </p>
               <h1 className="activities-title">
                 Developmental areas of children

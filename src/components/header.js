@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
 import ymcaLogo from "../images/oldlogo22.png";
-import ymcaLogo2 from "../images/logoy.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -52,15 +51,6 @@ const Header = () => {
           <Link to="/donation" className="nav-link donation">
             Donation
           </Link>
-          {window.innerWidth <= 768 ? (
-            <Link to="/ymca" className="nav-link">
-              YMCA
-            </Link>
-          ) : (
-            <Link to="/ymca">
-              <img src={ymcaLogo2} alt="YMCA Logo" className="ymca-logo" />
-            </Link>
-          )}
         </div>
       </nav>
     </header>

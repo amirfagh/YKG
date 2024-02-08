@@ -8,7 +8,7 @@ import logo2 from "../images/bird42.png";
 import logo3 from "../images/diver2.jpg";
 import logo4 from "../images/kid122.jpg";
 import backgroundImage from "../images/mian9.jpg";
-import backgroundImage2 from "../images/main2.jpg";
+import backgroundImage2 from "../images/main22.jpg";
 import backgroundImage3 from "../images/main1.jpg";
 
 const Main = () => {
@@ -16,7 +16,7 @@ const Main = () => {
     <div className="main-container">
       <Header />
       <div className="image-text-container">
-        <p className="image-text">Jerusalem International YMCA Kinder Garten</p>
+        <p className="image-text">Jerusalem International YMCA Kindergarten</p>
       </div>
       <main className="image-container">
         <img
