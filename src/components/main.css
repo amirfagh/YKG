@@ -125,9 +125,11 @@ body, html {
 
 .info-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 20px;
-  margin-bottom: 300px;
+  margin-bottom: 30px;
+  height: 400px;
+  background-color: white;
 }
 
 .info-box {
