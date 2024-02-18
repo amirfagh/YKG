@@ -30,7 +30,10 @@
     object-fit: cover;
     margin-bottom: 15px;
   }
-  
+  .details {
+    flex-direction: column;
+    text-align: center;
+  }
   .details h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
