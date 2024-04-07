@@ -1,14 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import "./about.css"; // Import your CSS file for styling
 import Header from "./header";
 import Footer from "./footer";
 import image1 from "../images/swim1.jpg";
 import image2 from "../images/about2.jpg";
 import image from "../images/circle.png";
+import { BiHandicap } from "react-icons/bi";
 
 const About = () => {
+  const [isBold, setIsBold] = useState(false); // State for bold text
+  const [zoomLevel, setZoomLevel] = useState(100); // State for zoom level (percentage)
+  const [showMenu, setShowMenu] = useState(false);
+  const handleBoldText = () => {
+    setIsBold(!isBold); // Toggle bold text
+  };
+  const handleMenuToggle = () => {
+    setShowMenu(!showMenu); // Toggle the menu visibility
+  };
+  const handleZoomIn = () => {
+    const newZoomLevel = Math.min(zoomLevel + 10, 200); // Increase zoom level by 10%
+    setZoomLevel(newZoomLevel);
+  };
+
+  const handleZoomOut = () => {
+    const newZoomLevel = Math.max(zoomLevel - 10, 50); // Decrease zoom level by 10%
+    setZoomLevel(newZoomLevel);
+  };
+
   return (
-    <div className="main-container">
+    <div className="main-container" style={{ zoom: `${zoomLevel}%` }}>
       <Header />
 
       <main>
@@ -19,10 +39,23 @@ const About = () => {
               <img src={image2} alt="Secoage" />
             </div>
             <div className="text-section">
-              <h1 className="activities-title2">
+              <div className="handicap-logo6" onClick={handleMenuToggle}>
+                <BiHandicap size={40} />
+              </div>
+              {showMenu && (
+                <div className="menu-container6">
+                  <label>
+                    <input type="checkbox" onChange={handleBoldText} />
+                    Bold Text
+                  </label>
+                  <button onClick={handleZoomIn}>Zoom In</button>
+                  <button onClick={handleZoomOut}>Zoom Out</button>
+                </div>
+              )}
+              <h1 className={`activities-title2 ${isBold ? "bold-text" : ""}`}>
                 The Erna and Henry Leir Peace preschool
               </h1>
-              <p>
+              <p className={isBold ? "bold-text" : ""}>
                 Founded in 1982, the Erna and Henry Leir Peace Preschool at the
                 Jerusalem International YMCA is a beacon of unity and learning.
                 Welcoming children from Christian, Jewish, and Muslim
@@ -32,20 +65,20 @@ const About = () => {
                 teacher. This fosters a natural environment of partnership and
                 mutual respect.
               </p>
-              <h1 className="activities-title2">
+              <h1 className={`activities-title2 ${isBold ? "bold-text" : ""}`}>
                 Living the Dream of a Harmonious Tomorrow
               </h1>
-              <p>
+              <p className={isBold ? "bold-text" : ""}>
                 Our preschool is more than just a learning environment; it's a
                 place where families and staff collaboratively live the dream of
                 a peaceful, unified future. We believe in the power of early
                 education to bridge cultural divides and lay the foundation for
                 a better world.
               </p>
-              <h1 className="activities-title2">
+              <h1 className={`activities-title2 ${isBold ? "bold-text" : ""}`}>
                 Celebrating Diversity Through Festivities
               </h1>
-              <p>
+              <p className={isBold ? "bold-text" : ""}>
                 We embrace and celebrate the diverse cultural and religious
                 backgrounds of our students. Our festivities include creating
                 greeting cards for the Jewish New Year, decorating the Christmas
@@ -53,15 +86,15 @@ const About = () => {
                 often shared with parents, bringing immense joy and excitement
                 to our community.
               </p>
-              <h1 className="activities-title2">
+              <h1 className={`activities-title2 ${isBold ? "bold-text" : ""}`}>
                 Focus on Holistic Development
               </h1>
-              <p>
+              <p className={isBold ? "bold-text" : ""}>
                 At the core of our philosophy is the emphasis on each child's
                 emotional, social, and cognitive development. Our approach is
                 tailored to nurture every aspect of a child's growth.
               </p>
-              <p>
+              <p className={isBold ? "bold-text" : ""}>
                 Features of Our Kindergarten
                 <ul>
                   <li>
@@ -94,7 +127,7 @@ const About = () => {
                   </li>
                 </ul>
               </p>
-              <p>
+              <p className={isBold ? "bold-text" : ""}>
                 Classroom Structure
                 <ul>
                   <li>Babies 1: 3 months - 9 months</li>
@@ -107,15 +140,17 @@ const About = () => {
                 </ul>
               </p>
 
-              <p>
+              <p className={isBold ? "bold-text" : ""}>
                 Annual scheduale
-                <p>The preschool operates from September-July.</p>
+                <p className={isBold ? "bold-text" : ""}>
+                  The preschool operates from September-July.
+                </p>
                 <br />
                 Sunday-Friday 7:30-16:00 Friday 7:30-12:30
                 <br />
                 August is reserved for our exciting summer camp.
               </p>
-              <h1 className="activities-title">
+              <h1 className={`activities-title ${isBold ? "bold-text" : ""}`}>
                 Developmental areas of children
               </h1>
               <div className="imported-image-container">

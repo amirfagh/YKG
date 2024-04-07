@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { BiHandicap } from "react-icons/bi";
 import staff2 from "../images/drive/IMG_0924.JPG";
 import staff3 from "../images/drive/IMG_0927.JPG";
 import staff4 from "../images/drive/IMG_0931.JPG";
@@ -180,10 +180,34 @@ const staffMembers = [
 ];
 
 const StaffPage = () => {
+  const [zoomLevel, setZoomLevel] = useState(100); // State for zoom level (percentage)
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleMenuToggle = () => {
+    setShowMenu(!showMenu); // Toggle the menu visibility
+  };
+  const handleZoomIn = () => {
+    const newZoomLevel = Math.min(zoomLevel + 10, 200); // Increase zoom level by 10%
+    setZoomLevel(newZoomLevel);
+  };
+
+  const handleZoomOut = () => {
+    const newZoomLevel = Math.max(zoomLevel - 10, 50); // Decrease zoom level by 10%
+    setZoomLevel(newZoomLevel);
+  };
   return (
-    <div className="staff-container">
+    <div className="staff-container" style={{ zoom: `${zoomLevel}%` }}>
       <Header />
       <h2>Our Staff</h2>
+      <div className="handicap-logo6" onClick={handleMenuToggle}>
+        <BiHandicap size={40} />
+      </div>
+      {showMenu && (
+        <div className="menu-container6">
+          <button onClick={handleZoomIn}>Zoom In</button>
+          <button onClick={handleZoomOut}>Zoom Out</button>
+        </div>
+      )}
       <div className="staff-list">
         {staffMembers.map((staff) => (
           <div key={staff.id} className="staff-member">

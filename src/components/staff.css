@@ -45,8 +45,108 @@
     color: #666;
   }
   
-  /* Responsive Styles */
+  .handicap-logo4{
+    margin-left: 90%;
+    
+  }
   
+  .menu-container4{
+    margin-left: 90%;
+  }
+  .menu-container4 label,
+.menu-container4 button {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.menu-container4 button {
+  padding: 5px 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-container4   button:hover {
+  background-color: #555; /* Change color on hover */
+}
+
+
+.menu-container5 {
+  position: fixed;
+  top: 80%; /* Adjust top position as needed */
+  right: 10px; /* Adjust right position as needed */
+  z-index: 1000; /* Ensure the menu appears above other elements */
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.handicap-logo5 {
+  position: fixed;
+  top: 90%; /* Adjust top position as needed */
+  right: 10px; /* Adjust right position as needed */
+  z-index: 1000; /* Ensure the logo appears above other elements */
+  color: #ffffff;
+}
+
+.menu-container5 label,
+.menu-container5 button {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.menu-container5 button {
+  padding: 5px 10px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+.menu-container5 button:hover {
+  background-color: #555; /* Change color on hover */
+}
+.menu-container6 {
+  position: fixed;
+  top: 80%; /* Adjust top position as needed */
+  right: 10px; /* Adjust right position as needed */
+  z-index: 1000; /* Ensure the menu appears above other elements */
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+.handicap-logo6 {
+  position: fixed;
+  top: 90%; /* Adjust top position as needed */
+  right: 10px; /* Adjust right position as needed */
+  z-index: 1000; /* Ensure the logo appears above other elements */
+  color: #0f0e0e;
+}
+
+.menu-container6 label,
+.menu-container6 button {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.menu-container6 button {
+  padding: 5px 10px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+.menu-container6 button:hover {
+  background-color: #555; /* Change color on hover */
+}
+
   @media (max-width: 768px) {
     .staff-member {
       width: 80%;

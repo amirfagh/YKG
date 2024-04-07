@@ -1,8 +1,7 @@
-// DonationPage.js
-
-import React from "react";
+import React, { useState } from "react";
 import Header from "./header";
 import backgroundImage from "../images/they.jpg";
+import { BiHandicap } from "react-icons/bi";
 
 const DonationPage = () => {
   const containerStyle = {
@@ -36,17 +35,44 @@ const DonationPage = () => {
     borderRadius: "5px",
   };
 
+  const [showMenu, setShowMenu] = useState(false);
+  const [zoomLevel, setZoomLevel] = useState(100);
+
+  const handleMenuToggle = () => {
+    setShowMenu(!showMenu);
+  };
+
+  const handleZoomIn = () => {
+    const newZoomLevel = Math.min(zoomLevel + 10, 200);
+    setZoomLevel(newZoomLevel);
+  };
+
+  const handleZoomOut = () => {
+    const newZoomLevel = Math.max(zoomLevel - 10, 50);
+    setZoomLevel(newZoomLevel);
+  };
+
   return (
     <div>
       <Header />
+      <div className="handicap-logo5" onClick={handleMenuToggle}>
+        <BiHandicap size={50} />
+      </div>
+      {showMenu && (
+        <div className="menu-container5">
+          <button onClick={handleZoomIn}>Zoom In</button>
+          <button onClick={handleZoomOut}>Zoom Out</button>
+        </div>
+      )}
       <div style={containerStyle}>
         <div
           style={{
             ...squareStyle2,
             ...(window.innerWidth <= 768 && {
-              width: "80vw", // Adjust the width for smaller screens
-              height: "auto", // Allow the height to adjust based on content
+              width: "80vw",
+              height: "auto",
             }),
+            zoom: `${zoomLevel}%`, // Add zoom style here
           }}
         >
           <h1>Donate for the Jerusalem International YMCA Pre-School</h1>
