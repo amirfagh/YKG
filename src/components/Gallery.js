@@ -19,6 +19,7 @@ import photo24 from "../images/kids/24.jpg";
 import photo25 from "../images/kids/25.jpg";
 import photo26 from "../images/kids/26.jpg";
 import Header from "./header";
+import { BiHandicap } from "react-icons/bi";
 const Gallery = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedPhotoIndex, setSelectedPhotoIndex] = useState(0);

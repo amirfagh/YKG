@@ -1,9 +1,26 @@
 import React, { useRef } from "react";
+import { useState } from "react";
+import { BiHandicap } from "react-icons/bi";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import Header from "./header";
 import Footer from "./footer";
 const Contact = () => {
+  const [zoomLevel, setZoomLevel] = useState(100); // State for zoom level (percentage)
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleMenuToggle = () => {
+    setShowMenu(!showMenu); // Toggle the menu visibility
+  };
+  const handleZoomIn = () => {
+    const newZoomLevel = Math.min(zoomLevel + 10, 200); // Increase zoom level by 10%
+    setZoomLevel(newZoomLevel);
+  };
+
+  const handleZoomOut = () => {
+    const newZoomLevel = Math.max(zoomLevel - 10, 50); // Decrease zoom level by 10%
+    setZoomLevel(newZoomLevel);
+  };
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -28,8 +45,17 @@ const Contact = () => {
   };
 
   return (
-    <div className="main-container">
+    <div className="main-container" style={{ zoom: `${zoomLevel}%` }}>
       <Header />
+      <div className="handicap-logo6" onClick={handleMenuToggle}>
+        <BiHandicap size={40} />
+      </div>
+      {showMenu && (
+        <div className="menu-container6">
+          <button onClick={handleZoomIn}>Zoom In</button>
+          <button onClick={handleZoomOut}>Zoom Out</button>
+        </div>
+      )}
       <StyledContactForm>
         <form ref={form} onSubmit={sendEmail}>
           <label>Child's Name</label>

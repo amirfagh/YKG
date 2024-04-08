@@ -195,6 +195,15 @@ body, html {
   font-family: 'Times New Roman', Times, serif;
 }
 
+.handicap-logo {
+  margin-right: 10px; /* Adjust margin as needed */
+  margin-left: 3%;
+  margin-top: 7%;
+}
+
+
+
+
 .button {
   padding: 10px 20px;
   font-size: 1em;
@@ -206,6 +215,39 @@ body, html {
 }
 /* main.css */
 /* ... (existing styles) */
+/* Add this CSS code to your main.css file or relevant CSS file */
+
+.menu-container {
+  position: absolute;
+  top: 18%; /* Adjust the top position as needed */
+  left: 15px; /* Adjust the left position as needed */
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.menu-container label,
+.menu-container button {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.menu-container button {
+  padding: 5px 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-container button:hover {
+  background-color: #555; /* Change color on hover */
+}
+.bold-text {
+  font-weight: bold;
+}
 
 /* Responsive Styles for Small Screens */
 @media only screen and (max-width: 768px) {
@@ -240,7 +282,6 @@ body, html {
   }
 
   
-
   .image-text-container {
     display: flex;
   align-items: center;
@@ -253,6 +294,11 @@ body, html {
     font-size: 1.9em; /* Adjust font size for better readability on small screens */
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+  }
+  .handicap-logo {
+    margin-right: 10px; /* Adjust margin as needed */
+    margin-left: 3%;
+    margin-top: 20%;
   }
   .activitiees {
     flex-direction: column; /* Change flex direction to column on small screens */
