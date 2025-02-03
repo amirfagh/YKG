@@ -272,21 +272,18 @@ body, html {
     max-width: 100%; /* Ensure logos don't exceed their container width */
   }
   .image-container {
-    width: 100vw;
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-    padding-top: 150px;
+    flex-direction: column; /* Stack images vertically */
+    height: auto; /* Allow it to expand based on content */
+    padding-top: 0; /* Remove extra spacing */
+    margin-top: 18vh;
+    margin-bottom: 5vh;
   }
-  
+
   .background-image {
-    width: 33%;
-    height: 100%;
-    object-fit: cover;
-    margin-right: 10px;
+    width: 100%; /* Make images take full width */
+    height: auto; /* Adjust height dynamically */
+    margin: 0; /* Remove spacing between images */
+    margin-top: 5px;
   }
   
   
