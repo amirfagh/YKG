@@ -1,15 +1,16 @@
 /* header.css */
 /* Header Styles */
 header {
-  background-color: #b84242;
+  background-color: #394244;
   color: #fff;
   padding: 10px 0;
   display: flex;
   align-items: center;
   flex-direction: column;
+  height: 10vh;
 }
 
-/* Navigation Styles */
+
 nav {
   display: flex;
   align-items: center;
@@ -19,26 +20,26 @@ nav {
 /* Link Styles */
 .nav-link {
   display: inline-block;
-  padding: 10px 20px;
-  margin: 0 5px;
+  padding: 8px 30px;
+  margin: 25px 5px;
   border-radius: 5px;
-  color: #000000;
+  color: #394244;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 /* Link Colors (Add your own colors) */
-.aboutus { background-color: #006BA6; }
-.activities { background-color: #F8DF00; }
+.aboutus { background-color: #ffffff; color: #5BDBB0 }
+.activities { background-color: #ffffff ; color: #5AA9EB}
 
-.staffpage { background-color: #9CFFFA; }
+.staffpage { background-color: #ffffff ;color: #ED596B  }
 
-.gallery { background-color: #9CFFFA; }
-.holidays { background-color: #8F2D56; }
-.contact { background-color: #0083E0; }
-.signup { background-color: #C70039; }
-.donation { background-color: #FFC300; }
+.gallery { background-color: #ffffff ;color: #5BDBB0  }
+.holidays { background-color: #ffffff;color: #5BDBB0 }
+.contact { background-color: #ffffff; color: #ED596B}
+.signup { background-color: #ffffff ; color: #5AA9EB }
+.donation { background-color: #ffffff ; color: #5BDBB0 }
 
 /* Logo Styles */
 .logo {
@@ -48,13 +49,19 @@ nav {
   margin-right: 10px;
   
 }
-.logo23 {
-  width: 80px;
-  height: 60px;
-  vertical-align: middle;
-  margin-right: 10px;
-  
+  .logo23 {
+    width: 200px;
+    height: 100px;
+    
+    margin-right:50px;
+    
+  }
+  .logo23 path {
+  stroke: black; /* Outline color */
+  stroke-width: 1px; /* Thickness of the outline */
+  paint-order: stroke fill; /* Ensures stroke is applied first */
 }
+
 
 /* YMCA and YMCA Kindergarten Logo Styles */
 .ymca-logo {

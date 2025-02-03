@@ -1,5 +1,8 @@
-// Main.js
+
 import React, { useState } from "react";
+
+import { motion } from "framer-motion";
+
 import "./main.css";
 import Header from "./header";
 import Footer from "./footer";
@@ -7,10 +10,14 @@ import logo1 from "../images/safa2.jpg";
 import logo2 from "../images/bird422.png";
 import logo3 from "../images/diver2.jpg";
 import logo4 from "../images/kid122.jpg";
-import backgroundImage from "../images/mian9.jpg";
-import backgroundImage2 from "../images/main22.jpg";
-import backgroundImage3 from "../images/main1.jpg";
+
 import { BiHandicap } from "react-icons/bi";
+
+import backgroundImage from "../images/22.jpg";
+import backgroundImage2 from "../images/11.jpg";
+import backgroundImage3 from "../images/33.jpg";
+
+
 const Main = () => {
   const [showMenu, setShowMenu] = useState(false); // State for showing/hiding the menu
   const [isBold, setIsBold] = useState(false); // State for bold text
@@ -54,20 +61,29 @@ const Main = () => {
         </div>
       )}
       <main className="image-container">
-        <img
+        <motion.img
           src={backgroundImage}
-          alt="Background"
+          alt="Background 1"
           className="background-image"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
         />
-        <img
+        <motion.img
           src={backgroundImage2}
-          alt="Background"
+          alt="Background 2"
           className="background-image"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2.5 }}
         />
-        <img
+        <motion.img
           src={backgroundImage3}
-          alt="Background"
+          alt="Background 3"
           className="background-image"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 3.5 }}
         />
         <div className="overlay"></div>
       </main>
