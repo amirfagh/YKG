@@ -103,7 +103,7 @@ const staffMembers = [
   },
   {
     id: 10,
-    name: "Wijdan",
+    name: "Huda",
     job: "Certificated Teacher ",
     class: "Babies group",
     experience: " 10 years of teaching experience",
@@ -111,7 +111,7 @@ const staffMembers = [
   },
   {
     id: 11,
-    name: "Huda",
+    name: "Mirvat",
     job: "Assistant Teacher ",
     class: "Toddlers group",
     experience: "5+ years of teaching experience",

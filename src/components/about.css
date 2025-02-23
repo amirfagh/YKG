@@ -311,17 +311,18 @@ background-color: #555; /* Change color on hover */
   }
 
   .image-section {
-    width: 00%;
-    margin-left: 0;
+    background-image: url('../images/annan2.png'); 
+    width: 50px;
   }
 
   .text-section {
     width: 100%;
-    margin-top: 0;
+    
   }
 
   .image-section img {
     height: auto;
+    
   }
 
   .imported-image-container {

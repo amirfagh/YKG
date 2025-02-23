@@ -324,8 +324,17 @@ body, html {
   align-items: center; /* Center items horizontally on small screens */
   margin-top: 100px;
   margin-bottom: 400px;
+  background-color: #ffffff;
+  padding: 220px 30px;
   }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: #5BDBB0;
 
+  }
   .info-box,
   .info-box2 {
     width: 80%; /* Adjust width for better responsiveness on small screens */
@@ -337,10 +346,11 @@ body, html {
     max-width: 100%; /* Ensure logos don't exceed their container width */
   }
   .image-container {
-  
+    background-image: url('../images/tele1.png'); 
     padding-top: 0; /* Remove extra spacing */
-    margin-top: 18vh;
-    margin-bottom: 5vh;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    background-color: #5BDBB0;
   }
 
   .background-image {
@@ -358,7 +368,7 @@ body, html {
   align-items: center;
   flex-direction: column;
   height: 1vh;
-  
+  background-color: #5BDBB0;
   }
 
   .image-text {

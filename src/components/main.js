@@ -17,12 +17,12 @@ import { BiHandicap } from "react-icons/bi";
 
 
 const Main = () => {
-  const [showMenu, setShowMenu] = useState(false); // State for showing/hiding the menu
-  const [isBold, setIsBold] = useState(false); // State for bold text
-  const [zoomLevel, setZoomLevel] = useState(100); // State for zoom level (percentage)
+  const [showMenu, setShowMenu] = useState(false);
+  const [isBold, setIsBold] = useState(false); 
+  const [zoomLevel, setZoomLevel] = useState(100); 
 
   const handleMenuToggle = () => {
-    setShowMenu(!showMenu); // Toggle the menu visibility
+    setShowMenu(!showMenu); 
   };
 
   const handleBoldText = () => {
