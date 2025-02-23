@@ -22,7 +22,7 @@ const DonationPage = () => {
     border: "2px solid #333",
     borderRadius: "10px",
     textAlign: "center",
-    backgroundColor: "rgba(255, 255, 255, 0.8)",
+    backgroundColor: "rgba(255, 255, 255, 0.9)",
   };
 
   const buttonStyle = {

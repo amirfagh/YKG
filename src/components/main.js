@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 
-import { motion } from "framer-motion";
+
 
 import "./main.css";
 import Header from "./header";
@@ -13,9 +13,7 @@ import logo4 from "../images/kid122.jpg";
 
 import { BiHandicap } from "react-icons/bi";
 
-import backgroundImage from "../images/22.jpg";
-import backgroundImage2 from "../images/11.jpg";
-import backgroundImage3 from "../images/33.jpg";
+
 
 
 const Main = () => {
