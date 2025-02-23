@@ -41,19 +41,11 @@ const Main = () => {
   return (
     <div className="main-container" style={{ zoom: `${zoomLevel}%` }}>
       <Header />
-      <div className="image-text-container">
-        <div className="handicap-logo6" onClick={handleMenuToggle}>
+      <div className="handicap-logo7" onClick={handleMenuToggle}>
           <BiHandicap size={40} />
         </div>
-        <div className="image-text-container2">
-        <p className="image-text">Jerusalem International YMCA </p>
-        <p className="image-text">Peace Preschool</p>
-        </div>
-        
-      </div>
-
-      {showMenu && (
-        <div className="menu-container6">
+        {showMenu && (
+        <div className="zoom-menu2">
           <label>
             <input type="checkbox" onChange={handleBoldText} />
             Bold Text
@@ -62,6 +54,16 @@ const Main = () => {
           <button onClick={handleZoomOut}>Zoom Out</button>
         </div>
       )}
+      <div className="image-text-container">
+        
+        <div className="image-text-container2">
+        <p className="image-text">Jerusalem International YMCA </p>
+        <p className="image-text">Peace Preschool</p>
+        </div>
+        
+      </div>
+
+     
       <main className="image-container">
       
         <div className="overlay"></div>

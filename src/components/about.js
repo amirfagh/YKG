@@ -41,11 +41,11 @@ const About = () => {
               
             </div>
             <div className="text-section">
-              <div className="handicap-logo6" onClick={handleMenuToggle}>
+              <div className="handicap-logo7" onClick={handleMenuToggle}>
                 <BiHandicap size={40} />
               </div>
               {showMenu && (
-                <div className="menu-container6">
+                <div className="zoom-menu2">
                   <label>
                     <input type="checkbox" onChange={handleBoldText} />
                     Bold Text

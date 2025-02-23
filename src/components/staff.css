@@ -117,6 +117,13 @@
 .menu-container4 {
   margin-left: 90%;
 }
+.handicap-logo5 {
+  position: fixed;
+  top: 90%; /* Adjust top position as needed */
+  right: 10px; /* Adjust right position as needed */
+  z-index: 1000; /* Ensure the logo appears above other elements */
+  color: #ffffff;
+  }
 .handicap-logo6 {
   position: fixed;
   top: 90%; /* Adjust top position as needed */
@@ -124,6 +131,13 @@
   z-index: 1000; /* Ensure the logo appears above other elements */
   color: #0f0e0e;
   }
+  .handicap-logo7 {
+    position: fixed;
+    top: 90%; /* Adjust top position as needed */
+    left: 10px; /* Adjust right position as needed */
+    z-index: 1001; /* Ensure the logo appears above other elements */
+    color: #0f0e0e;
+    }
 .menu-container4 label,
 .menu-container4 button {
   display: block;

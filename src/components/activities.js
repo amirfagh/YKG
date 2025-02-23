@@ -33,6 +33,15 @@ const Activities = () => {
   return (
     <div className="main-container" style={{ zoom: `${zoomLevel}%` }}>
       <Header />
+      <div className="handicap-logo7" onClick={handleMenuToggle}>
+          <BiHandicap size={40} />
+        </div>
+        {showMenu && (
+          <div className="zoom-menu2">
+            <button onClick={handleZoomIn}>Zoom In</button>
+            <button onClick={handleZoomOut}>Zoom Out</button>
+          </div>
+        )}
       <div className="hero-text1">
           <h1>Our Activities</h1>
         </div>
@@ -47,15 +56,7 @@ const Activities = () => {
       </div>
       
       <div className="activitiees">
-        <div className="handicap-logo6" onClick={handleMenuToggle}>
-          <BiHandicap size={40} />
-        </div>
-        {showMenu && (
-          <div className="menu-container6">
-            <button onClick={handleZoomIn}>Zoom In</button>
-            <button onClick={handleZoomOut}>Zoom Out</button>
-          </div>
-        )}
+        
         <div className="activity">
           
           <div className="activity-images">

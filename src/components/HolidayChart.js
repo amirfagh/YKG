@@ -31,11 +31,11 @@ const HolidayChart = () => {
         style={{ zoom: `${zoomLevel}%` }}
       >
         <h2>Holiday Chart</h2>
-        <div className="handicap-logo6" onClick={handleMenuToggle}>
+        <div className="handicap-logo7" onClick={handleMenuToggle}>
           <BiHandicap size={40} />
         </div>
         {showMenu && (
-          <div className="menu-container6">
+          <div className="zoom-menu2">
             <button onClick={handleZoomIn}>Zoom In</button>
             <button onClick={handleZoomOut}>Zoom Out</button>
           </div>
