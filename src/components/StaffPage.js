@@ -220,25 +220,36 @@ const staffMembers = [
 
 const StaffPage = () => {
   return (
-    <div className="staff-container">
-      <Header />
-      <h2>Our Staff</h2>
+    <div>
+<Header />
+<div className="staff-container">
+    
+      <h2>Staff Members</h2>
+      
       <div className="staff-list">
-        {staffMembers.map((staff) => (
-          <div key={staff.id} className="staff-member">
-            <div className="profile-picture">
-              <img src={staff.profilePicture} alt={`${staff.name}'s Profile`} />
+        {staffMembers.map((staff, index) => {
+          // Assign background class based on the index (cycles every 3 staff members)
+          const bgClass = `bg-${(index % 3) + 1}`;
+          const colorClass = `color-${(index % 3) + 1}`;
+          return (
+            <div key={staff.id} className={`staff-member ${bgClass}`}>
+              <img
+                src={staff.profilePicture}
+                alt={`${staff.name}'s profile`}
+                className="staff-img"
+              />
+              <h3 className={colorClass}>{staff.name} </h3>
+
+              <p><strong>Job:</strong> {staff.job}</p>
+              <p><strong>Class:</strong> {staff.class}</p>
+              <p><strong>Experience:</strong> {staff.experience}</p>
             </div>
-            <div className="details">
-              <h3>{staff.name}</h3>
-              <p>{staff.job}</p>
-              <p>{staff.class}</p>
-              <p>{staff.experience}</p>
-            </div>
-          </div>
-        ))}
+          );
+        })}                                                                               
       </div>
     </div>
+    </div>
+    
   );
 };
 

@@ -3,7 +3,8 @@ import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import Header from "./header";
 import Footer from "./footer";
-
+import ball2 from "../images/ball2.png";
+import ball3 from "../images/ball1.png";
 const Contact = () => {
   const form = useRef();
   const [messageSent, setMessageSent] = useState(false);
@@ -30,12 +31,14 @@ const Contact = () => {
         }
       );
   };
+ 
 
   return (
     <div className="main-container">
       <Header />
       <StyledContactForm>
       <h1>Contact Us</h1>
+      <BallImageLeft src={ball2} alt="Ball Left" />
         <form ref={form} onSubmit={sendEmail}>
           
           <input type="text" name="child_name" placeholder="Child's name" required />
@@ -62,12 +65,31 @@ const Contact = () => {
             <span>Address: King David Street 26, Jerusalem</span>
           </div>
         </form>
+        <BallImageRight src={ball3} alt="Ball Right" />
+
         <Footer />
       </StyledContactForm>
     </div>
   );
 };
+const BallImageLeft = styled.img`
+position: absolute;
+  left: 5%;  /* Adjust horizontal position */
+  top: 30%;   /* Higher position */
+  transform: rotate(-20deg); /* Tilt the ball */
+  width: 350px;  
+  height: 450px; 
+  
+`;
 
+const BallImageRight = styled.img`
+  position: absolute;
+  right: 5%; /* Adjust horizontal position */
+  top: 50%;   /* Lower than ball1 */
+  transform: rotate(25deg); /* Different angle */
+  width: 350px;  
+  height: 450px; 
+`;
 // Styled Contact Form
 const StyledContactForm = styled.div`
   background-color: #ED596B; 
@@ -95,6 +117,7 @@ h1{
     flex-direction: column;
     gap: 20px;
     margin-bottom:150px;
+    
   }
 
   label {
@@ -164,12 +187,13 @@ h1{
     font-size: 14px;
     color: #666;
     margin-top: 20px;
+    
   }
 
   .contact-info span {
     display: block;
     margin: 5px 0;
-  }
-`;
+  }                                                   
+`;                                                                                  
 
 export default Contact;

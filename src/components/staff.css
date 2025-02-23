@@ -1,59 +1,130 @@
 /* staffpage.css */
 
 .staff-container {
-    max-width: 100%;
-    margin: 0 auto;
-    
-    text-align: center;
-  }
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #5BDBB0;
+  text-align: center;
+  padding: 20px;
+}
+
+.staff-container h2 {
+  font-size: 56px;
+  text-align: center;
+  background-color: #5BDBB0;
+  color: #ffe3e3;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  margin-bottom: 20px;
+}
+
+.staff-member {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 50px;
+  background-size: cover;  /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the image inside the div */
+  background-repeat: no-repeat;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Adds some subtle shadow for depth */
+}
+
+.staff-member img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 15px; /* Reduce margin to bring text closer to the image */
+  margin-top: 20px;
+}
+
+.bg-1 {
+  background-image: url('../images/staff1.png');
+}
+
+.bg-2 {
+  background-image: url('../images/staff2.png');
+}
+
+.bg-3 {
+  background-image: url('../images/staff3.png');
+}
+
+.staff-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #5BDBB0;
+  padding: 20px 0;
+}
+
+
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.details {
+  flex-direction: column;
+  text-align: center;
+}
+
+.staff-member h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  margin-top: 35px;
   
-  .staff-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+}
+.color-1 {
+  color: #5AA9EB; /* Tomato */
+}
+
+.color-2 {
+  color: #ED596B; /* SteelBlue */
+}
+
+.color-3 {
+  color: #5BDBB0; /* LimeGreen */
+}
+
+.staff-member p {
+  font-size: 13px; /* Adjust font size for better readability */
+  color: #394244;
+  margin: 5px 10px;
+  line-height: 1.5;
+}
+
+.staff-member p strong {
+  color: #394244;
+  font-weight: bold;
+}
+
+.staff-member p:last-child {
+  margin-bottom: 20px;
+}
+
+.handicap-logo4 {
+  margin-left: 90%;
+}
+
+.menu-container4 {
+  margin-left: 90%;
+}
+.handicap-logo6 {
+  position: fixed;
+  top: 90%; /* Adjust top position as needed */
+  right: 10px; /* Adjust right position as needed */
+  z-index: 1000; /* Ensure the logo appears above other elements */
+  color: #0f0e0e;
   }
-  
-  .staff-member {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 250px;
-  }
-  
-  .profile-picture img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-  }
-  .details {
-    flex-direction: column;
-    text-align: center;
-  }
-  .details h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .details p {
-    margin: 0;
-    color: #666;
-  }
-  
-  .handicap-logo4{
-    margin-left: 90%;
-    
-  }
-  
-  .menu-container4{
-    margin-left: 90%;
-  }
-  .menu-container4 label,
+.menu-container4 label,
 .menu-container4 button {
   display: block;
   margin-bottom: 5px;
@@ -67,95 +138,33 @@
   cursor: pointer;
 }
 
-.menu-container4   button:hover {
-  background-color: #555; /* Change color on hover */
+.menu-container4 button:hover {
+  background-color: #555;
 }
-
 
 .menu-container5 {
   position: fixed;
-  top: 80%; /* Adjust top position as needed */
-  right: 10px; /* Adjust right position as needed */
-  z-index: 1000; /* Ensure the menu appears above other elements */
-  background-color: #ffffff;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  top: 80%;
+  right: 10px;
 }
 
-.handicap-logo5 {
-  position: fixed;
-  top: 90%; /* Adjust top position as needed */
-  right: 10px; /* Adjust right position as needed */
-  z-index: 1000; /* Ensure the logo appears above other elements */
-  color: #ffffff;
-}
-
-.menu-container5 label,
-.menu-container5 button {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.menu-container5 button {
-  padding: 5px 10px;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  border: none;
-  cursor: pointer;
-}
-
-.menu-container5 button:hover {
-  background-color: #555; /* Change color on hover */
-}
-.menu-container6 {
-  position: fixed;
-  top: 80%; /* Adjust top position as needed */
-  right: 10px; /* Adjust right position as needed */
-  z-index: 1000; /* Ensure the menu appears above other elements */
-  background-color: #ffffff;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-  
-.handicap-logo6 {
-  position: fixed;
-  top: 90%; /* Adjust top position as needed */
-  right: 10px; /* Adjust right position as needed */
-  z-index: 1000; /* Ensure the logo appears above other elements */
-  color: #0f0e0e;
-}
-
-.menu-container6 label,
-.menu-container6 button {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.menu-container6 button {
-  padding: 5px 10px;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  border: none;
-  cursor: pointer;
-}
-
-.menu-container6 button:hover {
-  background-color: #555; /* Change color on hover */
-}
-
-  @media (max-width: 768px) {
-    .staff-member {
-      width: 80%;
-    }
+/* Responsive Design */
+@media (max-width: 768px) {
+  .staff-container h2 {
+    font-size: 40px; /* Smaller font size on smaller screens */
   }
-  
-  @media (max-width: 480px) {
-    .staff-member {
-      width: 100%;
-    }
+
+  .staff-member {
+    width: 200px; /* Reduce size of staff member card on small screens */
   }
-  
+
+  .staff-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .staff-member img {
+    width: 80px;
+    height: 80px;
+  }
+}
