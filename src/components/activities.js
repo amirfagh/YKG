@@ -5,12 +5,13 @@ import Header from "./header";
 import { BiHandicap } from "react-icons/bi";
 
 
-import swimmingImage2 from "../images/66.jpg";
+import swimmingImage2 from "../images/act1.jpg";
+import image5 from "../images/annan6.png";
 
-import yogaImage2 from "../images/55.jpg";
-import musicImage1 from "../images/77.jpg";
+import yogaImage2 from "../images/act2.jpg";
+import musicImage1 from "../images/act3.jpg";
 
-import natureImage2 from "../images/88.jpg";
+import natureImage2 from "../images/act4.jpg";
 
 
 const Activities = () => {
@@ -32,11 +33,19 @@ const Activities = () => {
   return (
     <div className="main-container" style={{ zoom: `${zoomLevel}%` }}>
       <Header />
-      <div className="hero-section1">
-        <div className="hero-text1">
+      <div className="hero-text1">
           <h1>Our Activities</h1>
         </div>
+      <div className="hero-section3">
+      
+      <div className="hero-section1">
+        
+        
       </div>
+      <img src={image5} alt="Connecting Element" className="connecting-image3" />
+
+      </div>
+      
       <div className="activitiees">
         <div className="handicap-logo6" onClick={handleMenuToggle}>
           <BiHandicap size={40} />

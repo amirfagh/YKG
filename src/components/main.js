@@ -47,7 +47,11 @@ const Main = () => {
         <div className="handicap-logo6" onClick={handleMenuToggle}>
           <BiHandicap size={40} />
         </div>
-        <p className="image-text">Jerusalem International YMCA Kindergarten</p>
+        <div className="image-text-container2">
+        <p className="image-text">Jerusalem International YMCA </p>
+        <p className="image-text">Peace Preschool</p>
+        </div>
+        
       </div>
 
       {showMenu && (
@@ -61,30 +65,7 @@ const Main = () => {
         </div>
       )}
       <main className="image-container">
-        <motion.img
-          src={backgroundImage}
-          alt="Background 1"
-          className="background-image"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.5 }}
-        />
-        <motion.img
-          src={backgroundImage2}
-          alt="Background 2"
-          className="background-image"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 2.5 }}
-        />
-        <motion.img
-          src={backgroundImage3}
-          alt="Background 3"
-          className="background-image"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 3.5 }}
-        />
+      
         <div className="overlay"></div>
       </main>
 
@@ -100,7 +81,7 @@ const Main = () => {
             communities
           </p>
         </div>
-        <div className={`info-box2 ${isBold ? "bold-text" : ""}`}>
+        <div className="info-box2">
           <img src={logo3} alt="Logo 3" className="logo" />
           <p>We celebrate diversity and multiculturalism</p>
         </div>

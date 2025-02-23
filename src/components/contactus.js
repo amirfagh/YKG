@@ -35,17 +35,18 @@ const Contact = () => {
     <div className="main-container">
       <Header />
       <StyledContactForm>
+      <h1>Contact Us</h1>
         <form ref={form} onSubmit={sendEmail}>
-          <label>Child's Name</label>
-          <input type="text" name="child_name" required />
-          <label>Parent's Name</label>
-          <input type="text" name="from_name" required />
-          <label>Email</label>
-          <input type="email" name="user_email" required />
-          <label>Phone Number</label>
-          <input type="tel" name="phone_number" required />
-          <label>Message</label>
-          <textarea name="message" required />
+          
+          <input type="text" name="child_name" placeholder="Child's name" required />
+          
+          <input type="text" name="from_name" placeholder="Parent's name" required />
+          
+          <input type="email" name="user_email" placeholder="Email" required />
+          
+          <input type="tel" name="phone_number" placeholder="Phone number" required />
+          
+          <textarea name="message" placeholder="Message" required />
 
           <input type="submit" value="Send" />
 
@@ -67,79 +68,107 @@ const Contact = () => {
   );
 };
 
+// Styled Contact Form
 const StyledContactForm = styled.div`
+  background-color: #ED596B; 
+  
+  min-height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-
+h1{
+  font-size: 56px;
+  text-align: center;
+  background-color: #ED596B;
+  color: #ffe3e3;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
   form {
+    background-color: white; /* White background for the form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%;
+    max-width: 600px;
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
-    width: 50%;
+    gap: 20px;
+    margin-bottom:150px;
+  }
+
+  label {
     font-size: 16px;
-    margin-left: 20%;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
 
-    input {
-      width: 100%;
-      height: 35px;
-      padding: 7px;
-      outline: none;
-      border-radius: 5px;
-      border: 1px solid rgb(220, 220, 220);
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0px;
+    border-radius: 5px;
+    border: 2px solid #ED596B;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
 
-      &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
-      }
-    }
+  input:focus,
+  textarea:focus {
+    border-color:rgb(160, 0, 19);
+    outline: none;
+    background-color: white;
+  }
 
-    textarea {
-      max-width: 100%;
-      min-width: 100%;
-      width: 100%;
-      max-height: 100px;
-      min-height: 100px;
-      padding: 7px;
-      outline: none;
-      border-radius: 5px;
-      border: 1px solid rgb(220, 220, 220);
+  input:focus::placeholder,
+  textarea:focus::placeholder {
+    color: transparent;
+  }
 
-      &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
-      }
-    }
+  input::placeholder,
+  textarea::placeholder {
+    color: #000;
+    padding-left:20px;
+    padding: 0px 10px;
+  }
 
-    label {
-      margin-top: 1rem;
-    }
+  input[type="submit"] {
+    background-color: #ED596B;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
 
-    .thank-you-message {
-      margin-top: 1rem;
-      color: green;
-      font-weight: bold;
-      font-size: 18px;
-    }
+  input[type="submit"]:hover {
+    background-color:rgb(232, 29, 52);
+  }
 
-    .contact-info {
-      margin-top: 2rem;
-      margin-bottom: 25rem;
-      font-size: 20px;
-      font-weight: bold;
+  .thank-you-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+  }
 
-      span {
-        display: block;
-        margin-bottom: 0.5rem;
-      }
-    }
+  .contact-info {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+  }
 
-    input[type="submit"] {
-      margin-top: 2rem;
-      cursor: pointer;
-      background: rgb(184, 66, 66);
-      color: white;
-      border: none;
-    }
+  .contact-info span {
+    display: block;
+    margin: 5px 0;
   }
 `;
 

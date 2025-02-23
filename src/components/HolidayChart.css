@@ -1,24 +1,73 @@
 
 
+
 .holiday-chart-container {
-    max-width: 800px;
-    margin: 0 auto;
+    width: 99.1vw;
+    height: 220vh;
+    padding-top: 50px;
     text-align: center;
-    padding: 20px;
+    background-color: #5AA9EB;
   }
   
   .holiday-chart-container h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 2.8em;
+  
+  
+  color: #ffe3e3;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  margin: -5px;  
+  width: 99.1vw;
+
+    
+    background-color: #5AA9EB;
+
   }
   
   .holiday-chart-container img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: flex;
-    margin: 0 auto;
+    
+
     
 }
+.image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.holiday-image {
+  width: 66vw; /* Keep existing style */
+}
+
+.ball {
+  width: 350px;  
+  height: 450px; 
   
+}
+
+
+.ball-left {
+  position: absolute;
+  left: 5%;  /* Adjust horizontal position */
+  top: 30%;   /* Higher position */
+  transform: rotate(-20deg); /* Tilt the ball */
+}
+
+.ball-right {
+  position: absolute;
+  right: 5%; /* Adjust horizontal position */
+  top: 50%;   /* Lower than ball1 */
+  transform: rotate(25deg); /* Different angle */
+
+}
+
+.connecting-image3 {
+  width: 99.1vw; /* Adjust size as needed */
+  margin-top: 180px;
+  position: absolute;
+  left: 50%;
+  top: 170%;
+  transform: translateX(-50%);
+  z-index: 1;
+ 
+}

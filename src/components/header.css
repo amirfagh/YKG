@@ -20,8 +20,8 @@ nav {
 /* Link Styles */
 .nav-link {
   display: inline-block;
-  padding: 8px 30px;
-  margin: 25px 5px;
+  padding: 8px 10px;
+  margin: 15px 5px;
   border-radius: 5px;
   color: #394244;
   text-decoration: none;
@@ -30,16 +30,30 @@ nav {
 }
 
 /* Link Colors (Add your own colors) */
-.aboutus { background-color: #ffffff; color: #5BDBB0 }
-.activities { background-color: #ffffff ; color: #5AA9EB}
+.aboutus {  color: #ffffff }
 
-.staffpage { background-color: #ffffff ;color: #ED596B  }
+.aboutus:hover {  color: #5AA9EB }
+.activities {color: #ffffff}
+.activities:hover {  color: #ED596B }
 
-.gallery { background-color: #ffffff ;color: #5BDBB0  }
-.holidays { background-color: #ffffff;color: #5BDBB0 }
-.contact { background-color: #ffffff; color: #ED596B}
-.signup { background-color: #ffffff ; color: #5AA9EB }
-.donation { background-color: #ffffff ; color: #5BDBB0 }
+.staffpage {  color: #ffffff  }
+.staffpage:hover {  color: #5BDBB0 }
+
+.gallery {  color: #ffffff  }
+.gallery:hover {  color: #5BDBB0 }
+
+.holidays { color: #ffffff }
+.holidays:hover {  color: #5AA9EB }
+
+.contact {  color: #ffffff}
+.contact:hover {  color: #ED596B }
+
+.signup { color: #ffffff }
+.signup:hover {  color: #5BDBB0 }
+
+.donation {  color: #ffffff }
+.donation:hover {  color: #5AA9EB }
+
 
 /* Logo Styles */
 .logo {
@@ -53,7 +67,7 @@ nav {
     width: 200px;
     height: 100px;
     
-    margin-right:50px;
+    margin-right:20px;
     
   }
   .logo23 path {

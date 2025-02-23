@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import Header from "./header";
 import { BiHandicap } from "react-icons/bi";
-import Holiday from "../images/holdays22.png";
+import Holiday from "../images/hl4.png";
+import image5 from "../images/annan6.png";
+import ball1 from "../images/ball3.png";
+import ball2 from "../images/ball2.png";
+
 import "./HolidayChart.css";
 const HolidayChart = () => {
   const [zoomLevel, setZoomLevel] = useState(100); // State for zoom level (percentage)
@@ -36,8 +40,19 @@ const HolidayChart = () => {
             <button onClick={handleZoomOut}>Zoom Out</button>
           </div>
         )}
-        <img src={Holiday} alt="Holiday Chart" />{" "}
+        <div className="holiday-chart-container">
+  
+  
+  <div className="image-wrapper">
+    <img src={ball1} alt="Ball 1" className="ball ball-left" />
+    <img src={Holiday} alt="Holiday Chart" className="holiday-image" />
+    <img src={ball2} alt="Ball 2" className="ball ball-right" />
+  </div>
+</div>
+{" "}
+        
       </div>
+      <img src={image5} alt="Connecting Element" className="connecting-image3" />
     </div>
   );
 };

@@ -29,7 +29,7 @@ const DonationPage = () => {
     padding: "10px 20px",
     fontSize: "16px",
     fontWeight: "bold",
-    backgroundColor: "#b84242",
+    backgroundColor: "#ED596B",
     color: "black",
     textDecoration: "none",
     borderRadius: "5px",
@@ -75,7 +75,9 @@ const DonationPage = () => {
             zoom: `${zoomLevel}%`, // Add zoom style here
           }}
         >
-          <h1>Donate for the Jerusalem International YMCA Pre-School</h1>
+          <h1 style={{ fontSize: "56px", textAlign: "center", backgroundColor: "#5BDBB0", color: "#ffe3e3", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.9)" }}>
+            Donate for the Jerusalem International YMCA Pre-School
+          </h1>
           <p>Your support is greatly appreciated!</p>
           <a
             href="https://www.jgive.com/new/en/ils/charity-organizations/1481"

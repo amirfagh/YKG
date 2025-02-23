@@ -1,71 +1,91 @@
-/* General styles for all screen sizes */
+/* Styles specifically for the Signup page */
 
-.main-container2 {
-  font-family: 'Arial', sans-serif; /* Use a suitable font-family */
+/* Make the page take up full height */
+.signup-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Keep header at top */
+  height: 100vh;
+  background-color: #5BDBB0; /* Red background for the entire page */
 }
-
-.registration-header {
+.signup-page-container h1{
+  font-size: 56px;
   text-align: center;
-  position: relative;
-  margin-bottom: 20px;
+  background-color: #5BDBB0;
+  color: #ffe3e3;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+/* Header remains at the top */
+header {
+  /* Assuming the header styling is already defined in your Header component */
+  /* Make sure header is positioned at the top of the page */
 }
 
-.registration-header img {
-  width: 100%;
-  height: 40vh;
+/* Content will be centered below the header */
+.signup-content {
+  background-color: white; /* White background for the content container */
+  padding: 40px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  max-height: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 50px; /* Space between header and content */
+  margin-left: auto;
+  margin-right: auto;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.registration-header h2 {
+.signup-info p {
+  font-size: 35px;
+  line-height: 1.5;
+}
+
+.signup-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-info a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for the handicap icon and zoom menu */
+.handicap-icon {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  font-size: 42px;
-  color: black; /* Change the color to match your design */
-  text-shadow: 2px 2px 4px rgba(248, 13, 13, 0.7);
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
 }
 
-.registration-info {
-  max-width: 600px;
-  margin: 0 auto;
-  margin-bottom: 50%;
+.zoom-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.registration-info p {
-  text-align: center;
-  font-size: 32px;
-  line-height: 1.5;
+.zoom-menu button {
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-/* Media query for small screens */
-
-@media only screen and (max-width: 768px) {
-  .registration-header {
-    display: none;
-  }
-  .registration-header h2 {
-    display: none;
-    font-size: 28px; /* Adjust font size for smaller screens */
-  }
-  .registration-info p {
-    font-size: 20px; /* Adjust font size for smaller screens */
-  }
-  .registration-header img {
-    display: none;
-  }
-  .registration-info {
-    background-image: url('../images/kids15.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 20px; 
-  
-  }
-  .registration-info p {
-    text-align: center;
-  font-size: 42px;
-  line-height: 1.5;
-  color: #000;
-  }
-  
+.zoom-menu button:hover {
+  background-color: #45a049;
 }

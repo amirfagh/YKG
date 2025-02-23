@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import "./about.css"; // Import your CSS file for styling
 import Header from "./header";
 import Footer from "./footer";
-import image1 from "../images/swim1.jpg";
-import image2 from "../images/about2.jpg";
-import image from "../images/circle.png";
+
+import image from "../images/diagram.png";
+import image4 from "../images/annan6.png";
+import image5 from "../images/annan5.png";
+
 import { BiHandicap } from "react-icons/bi";
 
 const About = () => {
@@ -35,8 +37,8 @@ const About = () => {
         <div className="content">
           <div className="flex-container">
             <div className="image-section">
-              <img src={image1} alt="Firse" />
-              <img src={image2} alt="Secoage" />
+             
+              
             </div>
             <div className="text-section">
               <div className="handicap-logo6" onClick={handleMenuToggle}>
@@ -52,6 +54,7 @@ const About = () => {
                   <button onClick={handleZoomOut}>Zoom Out</button>
                 </div>
               )}
+              <img src={image5} alt="Connecting Element" className="connecting-image2" />
               <h1 className={`activities-title2 ${isBold ? "bold-text" : ""}`}>
                 The Erna and Henry Leir Peace preschool
               </h1>
@@ -150,17 +153,18 @@ const About = () => {
                 <br />
                 August is reserved for our exciting summer camp.
               </p>
-              <h1 className={`activities-title ${isBold ? "bold-text" : ""}`}>
-                Developmental areas of children
-              </h1>
-              <div className="imported-image-container">
-                <img
-                  src={image}
-                  alt="Imported Description"
-                  className="imported-image"
-                />
-              </div>
+              
+              <img src={image4} alt="Connecting Element" className="connecting-image" />
             </div>
+          
+            <div className="imported-image-container">
+             
+             <img
+               src={image}
+               alt="Imported Description"
+               className="imported-image"
+             />
+           </div>
           </div>
         </div>
       </main>

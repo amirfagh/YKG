@@ -1,3 +1,119 @@
 .bold-text {
     font-weight: bold;
+  }/* Main container styling */
+.main-container {
+  background-color: #f4f4f9; /* Set a light background color for the page */
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form container box */
+.StyledContactForm {
+  background-color: white; /* White background for the form box */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the box */
+  width: 100%;
+  max-width: 600px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add space between form elements */
+}
+
+/* Styling for labels inside inputs */
+label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #d1d1d1; /* Lighter border for the inputs */
+  background-color: #f9f9f9;
+  font-size: 16px;
+  color: #333;
+  box-sizing: border-box;
+  transition: all 0.3s ease; /* Smooth transition for focus state */
+}
+
+/* Label inside input (floating label effect using placeholder) */
+input:focus,
+textarea:focus {
+  border-color: #00ce9e; /* Change border color on focus */
+  outline: none;
+  background-color: white;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: transparent; /* Hide placeholder when focused */
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa; /* Placeholder color */
+}
+
+/* Add a colored border when focused */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  border-color: #00ce9e;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+  background-color: #00ce9e;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #019d7d;
+}
+
+/* Thank you message styling */
+.thank-you-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Contact info section */
+.contact-info {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 20px;
+}
+
+.contact-info span {
+  display: block;
+  margin: 5px 0;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .StyledContactForm {
+    padding: 20px;
+    width: 90%;
   }
+}
