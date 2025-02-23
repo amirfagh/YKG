@@ -46,9 +46,15 @@ const Header = () => {
           <Link to="/signup" className="nav-link signup">
             Registration
           </Link>
-          <Link to="/donation" className="nav-link donation">
-            Donation
-          </Link>
+          <a 
+  href="https://www.jgive.com/new/en/ils/charity-organizations/1481" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="nav-link donation"
+>
+  Donate
+</a>
+
         </div>
       </nav>
     </header>
