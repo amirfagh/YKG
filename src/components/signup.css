@@ -59,7 +59,6 @@ header {
   right: 5%; /* Adjust horizontal position */
   top: 50%;   /* Lower than ball1 */
   transform: rotate(25deg); /* Different angle */
-  
 }
 
 /* Position the ball on the right */
@@ -68,7 +67,6 @@ header {
   right: 5%; /* Adjust horizontal position */
   top: 40%;   /* Lower than ball1 */
   transform: rotate(25deg); /* Different angle */
-  
 }
 
 .signup-info a {
@@ -133,4 +131,35 @@ header {
 
 .zoom-menu button:hover {
   background-color: #45a049;
+}
+@media (max-width: 768px) {
+  .signup-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Keep header at top */
+    height: 130vh;
+    background-color: #5BDBB0; /* Red background for the entire page */
+  }
+  .ball-left img,
+.ball-right img {
+  width: 150px; /* 50% of the original 80px width */
+  height: 200px; /* 50% of the original 80px height */
+  object-fit: cover; /* Ensure the image is not stretched */
+}
+
+/* Position the ball on the left */
+.ball-left {
+  position: absolute;
+  right: 5%; /* Adjust horizontal position */
+  top: 50%;   /* Lower than ball1 */
+  transform: rotate(25deg); /* Different angle */
+}
+
+/* Position the ball on the right */
+.ball-right {
+  position: absolute;
+  right: 5%; /* Adjust horizontal position */
+  top: 40%;   /* Lower than ball1 */
+  transform: rotate(25deg); /* Different angle */
+}
 }

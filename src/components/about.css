@@ -56,6 +56,8 @@
   justify-content: center;
   align-items: center;
   background-color:#ED596B ;
+  border-radius: 60px;
+  
 }
 .hero-section2 {
   width: 100%;
@@ -305,19 +307,67 @@ cursor: pointer;
 background-color: #555; /* Change color on hover */
 }
 @media only screen and (max-width: 767px) {
+  .connecting-image2 {
+   display: none;
+   
+  }
+  .connecting-image {
+    display: none;
+    
+   }
+  .image-section {
+    width: 96.5vw;
+    height: 140vh;
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    background-image: url('../images/tele5.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #5AA9EB;
+    
+  }
   .flex-container {
     flex-direction: column;
     margin-bottom: 70%;
+    height: 50vh;
   }
+  .connecting-image3 {
+    display: none;
+  }
+  .hero-section3{
+    width: 96.5vw;
+    height:35vh;
+     
+   padding-bottom: 280px;
+    display: flex;
+    justify-content: center;
+    
+    background-color:#ED596B;
 
-  .image-section {
-    background-image: url('../images/annan2.png'); 
-    width: 50px;
+  }
+  .hero-section1 {
+    border-radius: 60px 60px 0 0;
+    width: 90vw;
+    height: 60vh;
+    background-image: url('../images/tele2.png'); 
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#ED596B ;
   }
 
   .text-section {
-    width: 100%;
-    
+    background-color: #5AA9EB;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 96.5vw;
   }
 
   .image-section img {
@@ -328,11 +378,13 @@ background-color: #555; /* Change color on hover */
   .imported-image-container {
     margin-top: 20px;
     height: auto;
+    
   }
 
   .imported-image {
     width: 100%;
     height: auto;
+    margin-bottom: 250px;
   }
 
   .activities-title {

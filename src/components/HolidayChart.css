@@ -71,3 +71,56 @@
   z-index: 1;
  
 }
+@media only screen and (max-width: 768px) {
+  .holiday-chart-container {
+    width: 96.5vw;
+    height: 80vh;
+    padding-top: 50px;
+    text-align: center;
+    background-color: #5AA9EB;
+  }
+  .holiday-chart-container h2 {
+    font-size: 2.8em;
+  
+  
+  color: #ffe3e3;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  margin: -5px;  
+  width: 96.5vw;
+
+    
+    background-color: #5AA9EB;
+
+  }
+  .connecting-image3 {
+    width: 96.5vw;
+    
+    position: absolute;
+    left: 50%;
+    top: 78%;
+    transform: translateX(-50%);
+    z-index: 1;
+   
+  }
+  .ball {
+    width: 150px;  
+    height: 200px; 
+    
+  }
+  
+  
+  .ball-left {
+    position: absolute;
+    left: 15%;  /* Adjust horizontal position */
+    top: 90%;   /* Higher position */
+    transform: rotate(-20deg); /* Tilt the ball */
+  }
+  
+  .ball-right {
+    position: absolute;
+    right: 15%; /* Adjust horizontal position */
+    top: 100%;   /* Lower than ball1 */
+    transform: rotate(25deg); /* Different angle */
+  
+  }
+}

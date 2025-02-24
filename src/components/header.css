@@ -116,7 +116,8 @@ margin-left: 10px;
     top: 60px;
     right: 0;
     width: 100%;
-    background-color: #b84242;
+    z-index: 99999;
+    background-color: #394244;
   }
 
   .nav-links.open {

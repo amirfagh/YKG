@@ -3,7 +3,7 @@ import "./about.css"; // Import your CSS file for styling
 import Header from "./header";
 import Footer from "./footer";
 
-import image from "../images/diagram.png";
+import image from "../images/diagram2.png";
 import image4 from "../images/annan6.png";
 import image5 from "../images/annan5.png";
 
