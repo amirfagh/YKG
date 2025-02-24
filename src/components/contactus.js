@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import Header from "./header";
-import Footer from "./footer";
+
 import ball2 from "../images/ball2.png";
 import ball3 from "../images/ball1.png";
 
