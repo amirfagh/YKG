@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "./header";
 import { BiHandicap } from "react-icons/bi";
-import Holiday from "../images/hl4.png";
+import Holiday from "../images/calender.jpg";
 import image5 from "../images/annan6.png";
 import ball1 from "../images/ball3.png";
 import ball2 from "../images/ball2.png";
