@@ -33,7 +33,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px; /* adjust value as needed */
 }
+
 
 .holiday-image {
   width: 66vw; /* Keep existing style */
