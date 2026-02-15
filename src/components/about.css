@@ -104,7 +104,7 @@
   align-items: center;
   overflow: hidden;
   position: relative;
-  background-image: url('../images/test.png'); 
+  background-image: url('../images/aboutphone.png'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -319,12 +319,12 @@ background-color: #555; /* Change color on hover */
     width: 96.5vw;
     height: 140vh;
     display: flex;
-    padding-top: 50px;
+    padding-top: 300px;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     position: relative;
-    background-image: url('../images/tele321.jpg'); 
+    background-image: url('../images/aboutphone11.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

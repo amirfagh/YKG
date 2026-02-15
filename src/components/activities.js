@@ -5,13 +5,13 @@ import Header from "./header";
 import { BiHandicap } from "react-icons/bi";
 
 
-import swimmingImage2 from "../images/act1.jpg";
+import swimmingImage2 from "../images/swimming11.jpg";
 import image5 from "../images/annan6.png";
 
-import yogaImage2 from "../images/act2.jpg";
-import musicImage1 from "../images/act3.jpg";
+import yogaImage2 from "../images/yoga11.jpg";
+import musicImage1 from "../images/music11.jpg";
 
-import natureImage2 from "../images/act4.jpg";
+import natureImage2 from "../images/exploringnature11.jpg";
 
 
 const Activities = () => {
