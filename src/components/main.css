@@ -129,7 +129,7 @@ body, html {
 .hero-section2 {
   width: 100%;
   height: 40vh;
-  background-image: url('../images/aact9.jpg'); 
+  background-image: url('../images/aact9.webp'); 
   background-size: cover; 
   background-position: center; 
   display: flex;
@@ -210,7 +210,7 @@ body, html {
   align-items: center;
   overflow: hidden; 
   position: relative;
-  background-image: url('../images/annan1.png'); 
+  background-image: url('../images/annan1.webp'); 
   background-color: #5BDBB0;
   background-size: cover; 
   background-position: center; 
@@ -346,7 +346,7 @@ body, html {
     max-width: 100%; /* Ensure logos don't exceed their container width */
   }
   .image-container {
-    background-image: url('../images/tele4.png'); 
+    background-image: url('../images/tele4.webp'); 
     padding-top: 0; /* Remove extra spacing */
     margin-top: 15vh;
     margin-bottom: 15vh;

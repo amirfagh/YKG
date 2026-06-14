@@ -1,27 +1,27 @@
 import React from "react";
-import staff1 from "../images/gnnot/wetransfer_2025-01-30_1603/Rawan.jpg";
-import staff2 from "../images/gnnot/wetransfer_2025-01-30_1603/Monica.jpg";
-import staff3 from "../images/gnnot/wetransfer_2025-01-30_1603/Fidaa.jpg";
-import staff4 from "../images/gnnot/wetransfer_2025-01-30_1603/Nujud.jpg";
-import staff5 from "../images/gnnot/wetransfer_2025-01-30_1603/Sara.jpg";
-import staff6 from "../images/gnnot/wetransfer_2025-01-30_1603/Angela.jpg";
-import staff7 from "../images/gnnot/wetransfer_2025-01-30_1603/Suha.jpg";
-import staff9 from "../images/gnnot/wetransfer_2025-01-30_1603/Ola.jpg";
-import staff10 from "../images/gnnot/wetransfer_2025-01-30_1603/Tatyana.jpg";
-import staff11 from "../images/gnnot/wetransfer_2025-01-30_1603/Huda.jpg";
-import staff12 from "../images/gnnot/wetransfer_2025-01-30_1603/Mirvat.jpg";
-import staff13 from "../images/gnnot/wetransfer_2025-01-30_1603/Ghada.jpg";
-import staff14 from "../images/gnnot/wetransfer_2025-01-30_1603/Maria.jpg";
-import staff15 from "../images/gnnot/wetransfer_2025-01-30_1603/Dorit.jpg";
-import staff16 from "../images/gnnot/wetransfer_2025-01-30_1603/Halleli.jpg";
-import staff17 from "../images/gnnot/wetransfer_2025-01-30_1603/Leen.jpg";
-import staff18 from "../images/gnnot/wetransfer_2025-01-30_1603/Lina.jpg";
-import staff19 from "../images/gnnot/wetransfer_2025-01-30_1603/Rania.jpg";
-import staff20 from "../images/gnnot/wetransfer_2025-01-30_1603/Rasha.jpg";
-import staff21 from "../images/gnnot/wetransfer_2025-01-30_1603/Tamar.jpg";
-import staff22 from "../images/gnnot/wetransfer_2025-01-30_1603/Vardit.jpg";
-import staff23 from "../images/gnnot/wetransfer_2025-01-30_1603/Walaa.jpg";
-import staff24 from "../images/gnnot/wetransfer_2025-01-30_1603/Manal.jpg";
+import staff1 from "../images/gnnot/wetransfer_2025-01-30_1603/Rawan.webp";
+import staff2 from "../images/gnnot/wetransfer_2025-01-30_1603/Monica.webp";
+import staff3 from "../images/gnnot/wetransfer_2025-01-30_1603/Fidaa.webp";
+import staff4 from "../images/gnnot/wetransfer_2025-01-30_1603/Nujud.webp";
+import staff5 from "../images/gnnot/wetransfer_2025-01-30_1603/Sara.webp";
+import staff6 from "../images/gnnot/wetransfer_2025-01-30_1603/Angela.webp";
+import staff7 from "../images/gnnot/wetransfer_2025-01-30_1603/Suha.webp";
+import staff9 from "../images/gnnot/wetransfer_2025-01-30_1603/Ola.webp";
+import staff10 from "../images/gnnot/wetransfer_2025-01-30_1603/Tatyana.webp";
+import staff11 from "../images/gnnot/wetransfer_2025-01-30_1603/Huda.webp";
+import staff12 from "../images/gnnot/wetransfer_2025-01-30_1603/Mirvat.webp";
+import staff13 from "../images/gnnot/wetransfer_2025-01-30_1603/Ghada.webp";
+import staff14 from "../images/gnnot/wetransfer_2025-01-30_1603/Maria.webp";
+import staff15 from "../images/gnnot/wetransfer_2025-01-30_1603/Dorit.webp";
+import staff16 from "../images/gnnot/wetransfer_2025-01-30_1603/Halleli.webp";
+import staff17 from "../images/gnnot/wetransfer_2025-01-30_1603/Leen.webp";
+import staff18 from "../images/gnnot/wetransfer_2025-01-30_1603/Lina.webp";
+import staff19 from "../images/gnnot/wetransfer_2025-01-30_1603/Rania.webp";
+import staff20 from "../images/gnnot/wetransfer_2025-01-30_1603/Rasha.webp";
+import staff21 from "../images/gnnot/wetransfer_2025-01-30_1603/Tamar.webp";
+import staff22 from "../images/gnnot/wetransfer_2025-01-30_1603/Vardit.webp";
+import staff23 from "../images/gnnot/wetransfer_2025-01-30_1603/Walaa.webp";
+import staff24 from "../images/gnnot/wetransfer_2025-01-30_1603/Manal.webp";
 
 import "./staff.css";
 import Header from "./header";
@@ -233,7 +233,7 @@ const StaffPage = () => {
           const colorClass = `color-${(index % 3) + 1}`;
           return (
             <div key={staff.id} className={`staff-member ${bgClass}`}>
-              <img
+              <img loading="lazy"
                 src={staff.profilePicture}
                 alt={`${staff.name}'s profile`}
                 className="staff-img"

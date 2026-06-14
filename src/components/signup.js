@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./signup.css";
 import Header from "./header";
 import { BiHandicap } from "react-icons/bi";
-import ball2 from "../images/ball1.png";
-import ball3 from "../images/ball3.png";
+import ball2 from "../images/ball1.webp";
+import ball3 from "../images/ball3.webp";
 
 const Signup = () => {
   const [zoomLevel, setZoomLevel] = useState(100); // State for zoom level (percentage)
@@ -54,10 +54,10 @@ const Signup = () => {
           </div>
         )}
       <div className="ball-left">
-        <img src={ball2} alt="Ball Left" />
+        <img loading="lazy" src={ball2} alt="Ball Left" />
       </div>
       <div className="ball-right">
-        <img src={ball3} alt="Ball Right" />
+        <img loading="lazy" src={ball3} alt="Ball Right" />
       </div>
     </div>
   );

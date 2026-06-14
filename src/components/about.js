@@ -3,9 +3,9 @@ import "./about.css"; // Import your CSS file for styling
 import Header from "./header";
 import Footer from "./footer";
 
-import image from "../images/diagram2.png";
-import image4 from "../images/annan6.png";
-import image5 from "../images/annan5.png";
+import image from "../images/diagram2.webp";
+import image4 from "../images/annan6.webp";
+import image5 from "../images/annan5.webp";
 
 import { BiHandicap } from "react-icons/bi";
 
@@ -54,7 +54,7 @@ const About = () => {
                   <button onClick={handleZoomOut}>Zoom Out</button>
                 </div>
               )}
-              <img src={image5} alt="Connecting Element" className="connecting-image2" />
+              <img loading="lazy" src={image5} alt="Connecting Element" className="connecting-image2" />
               <h1 className={`activities-title2 ${isBold ? "bold-text" : ""}`}>
                 The Erna and Henry Leir Peace preschool
               </h1>
@@ -154,12 +154,12 @@ const About = () => {
                 August is reserved for our exciting summer camp.
               </p>
               
-              <img src={image4} alt="Connecting Element" className="connecting-image" />
+              <img loading="lazy" src={image4} alt="Connecting Element" className="connecting-image" />
             </div>
           
             <div className="imported-image-container">
              
-             <img
+             <img loading="lazy"
                src={image}
                alt="Imported Description"
                className="imported-image"

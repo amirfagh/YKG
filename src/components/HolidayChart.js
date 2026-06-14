@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Header from "./header";
 import { BiHandicap } from "react-icons/bi";
-import Holiday from "../images/calender.jpg";
-import image5 from "../images/annan6.png";
-import ball1 from "../images/ball3.png";
-import ball2 from "../images/ball2.png";
+import Holiday from "../images/calender.webp";
+import image5 from "../images/annan6.webp";
+import ball1 from "../images/ball3.webp";
+import ball2 from "../images/ball2.webp";
 
 import "./HolidayChart.css";
 const HolidayChart = () => {
@@ -44,15 +44,15 @@ const HolidayChart = () => {
   
   
   <div className="image-wrapper">
-    <img src={ball1} alt="Ball 1" className="ball ball-left" />
-    <img src={Holiday} alt="Holiday Chart" className="holiday-image" />
-    <img src={ball2} alt="Ball 2" className="ball ball-right" />
+    <img loading="lazy" src={ball1} alt="Ball 1" className="ball ball-left" />
+    <img loading="lazy" src={Holiday} alt="Holiday Chart" className="holiday-image" />
+    <img loading="lazy" src={ball2} alt="Ball 2" className="ball ball-right" />
   </div>
 </div>
 {" "}
         
       </div>
-      <img src={image5} alt="Connecting Element" className="connecting-image3" />
+      <img loading="lazy" src={image5} alt="Connecting Element" className="connecting-image3" />
     </div>
   );
 };

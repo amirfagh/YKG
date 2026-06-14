@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "./header";
-import backgroundImage from "../images/they.jpg";
+import backgroundImage from "../images/they.webp";
 import { BiHandicap } from "react-icons/bi";
 
 const DonationPage = () => {

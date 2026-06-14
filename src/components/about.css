@@ -49,7 +49,7 @@
 .hero-section1 {
   width: 90vw;
   height: 100vh;
-  background-image: url('../images/active.jpg'); 
+  background-image: url('../images/active.webp'); 
   background-size: cover; 
   background-position: center; 
   display: flex;
@@ -104,7 +104,7 @@
   align-items: center;
   overflow: hidden;
   position: relative;
-  background-image: url('../images/aboutphone.png'); 
+  background-image: url('../images/aboutphone.webp'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -324,7 +324,7 @@ background-color: #555; /* Change color on hover */
     align-items: center;
     overflow: hidden;
     position: relative;
-    background-image: url('../images/aboutphone11.jpg'); 
+    background-image: url('../images/aboutphone11.webp'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -354,7 +354,7 @@ background-color: #555; /* Change color on hover */
     border-radius: 60px 60px 0 0;
     width: 90vw;
     height: 60vh;
-    background-image: url('../images/tele2.png'); 
+    background-image: url('../images/tele2.webp'); 
     background-size: cover; 
     background-position: center; 
     display: flex;

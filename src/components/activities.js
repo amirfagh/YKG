@@ -5,13 +5,13 @@ import Header from "./header";
 import { BiHandicap } from "react-icons/bi";
 
 
-import swimmingImage2 from "../images/swimming11.jpg";
-import image5 from "../images/annan6.png";
+import swimmingImage2 from "../images/swimming11.webp";
+import image5 from "../images/annan6.webp";
 
-import yogaImage2 from "../images/yoga11.jpg";
-import musicImage1 from "../images/music11.jpg";
+import yogaImage2 from "../images/yoga11.webp";
+import musicImage1 from "../images/music11.webp";
 
-import natureImage2 from "../images/exploringnature11.jpg";
+import natureImage2 from "../images/exploringnature11.webp";
 
 
 const Activities = () => {
@@ -51,7 +51,7 @@ const Activities = () => {
         
         
       </div>
-      <img src={image5} alt="Connecting Element" className="connecting-image3" />
+      <img loading="lazy" src={image5} alt="Connecting Element" className="connecting-image3" />
 
       </div>
       
@@ -61,20 +61,20 @@ const Activities = () => {
           
           <div className="activity-images">
             
-            <img src={swimmingImage2} alt="Swimming 2" />
+            <img loading="lazy" src={swimmingImage2} alt="Swimming 2" />
           </div>
         </div>
         <div className="activity">
           
           <div className="activity-images">
             
-            <img src={yogaImage2} alt="Yoga 2" />
+            <img loading="lazy" src={yogaImage2} alt="Yoga 2" />
           </div>
         </div>
         <div className="activity">
           
           <div className="activity-images">
-            <img src={musicImage1} alt="Music 1" />
+            <img loading="lazy" src={musicImage1} alt="Music 1" />
            
           </div>
         </div>
@@ -82,7 +82,7 @@ const Activities = () => {
           
           <div className="activity-images">
             
-            <img src={natureImage2} alt="Nature 2" />
+            <img loading="lazy" src={natureImage2} alt="Nature 2" />
           </div>
         </div>
       </div>

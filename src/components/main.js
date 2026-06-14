@@ -6,10 +6,10 @@ import React, { useState } from "react";
 import "./main.css";
 import Header from "./header";
 import Footer from "./footer";
-import logo1 from "../images/safa2.jpg";
-import logo2 from "../images/bird422.png";
-import logo3 from "../images/diver2.jpg";
-import logo4 from "../images/kid122.jpg";
+import logo1 from "../images/safa2.webp";
+import logo2 from "../images/bird422.webp";
+import logo3 from "../images/diver2.webp";
+import logo4 from "../images/kid122.webp";
 
 import { BiHandicap } from "react-icons/bi";
 
@@ -71,22 +71,22 @@ const Main = () => {
 
       <div className="info-container">
         <div className={`info-box ${isBold ? "bold-text" : ""}`}>
-          <img src={logo1} alt="Logo 1" className="logo" />
+          <img loading="lazy" src={logo1} alt="Logo 1" className="logo" />
           <p>Bilingual: Arabic & Hebrew kindergarten</p>
         </div>
         <div className={`info-box2 ${isBold ? "bold-text" : ""}`}>
-          <img src={logo2} alt="Logo 2" className="logo" />
+          <img loading="lazy" src={logo2} alt="Logo 2" className="logo" />
           <p>
             We provide a safe space for Jewish, Arab, and International
             communities
           </p>
         </div>
         <div className="info-box2">
-          <img src={logo3} alt="Logo 3" className="logo" />
+          <img loading="lazy" src={logo3} alt="Logo 3" className="logo" />
           <p>We celebrate diversity and multiculturalism</p>
         </div>
         <div className={`info-box ${isBold ? "bold-text" : ""}`}>
-          <img src={logo4} alt="Logo 4" className="logo" />
+          <img loading="lazy" src={logo4} alt="Logo 4" className="logo" />
           <p>
             We put a special emphasis on the emotional, social, and cognitive
             development of every child

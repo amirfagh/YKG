@@ -3,8 +3,8 @@ import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import Header from "./header";
 
-import ball2 from "../images/ball2.png";
-import ball3 from "../images/ball1.png";
+import ball2 from "../images/ball2.webp";
+import ball3 from "../images/ball1.webp";
 
 const Contact = () => {
   const form = useRef();

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
-import ymcaLogo from "../images/kglogo.png";
+import ymcaLogo from "../images/kglogo.webp";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
