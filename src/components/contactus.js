@@ -40,32 +40,42 @@ const Contact = () => {
         <h1>Contact Us</h1>
         <BallImageLeft src={ball2} alt="Ball Left" />
         <form ref={form} onSubmit={sendEmail}>
+          <label htmlFor="child_name">Child's name</label>
           <input
+            id="child_name"
             type="text"
             name="child_name"
             placeholder="Child's name"
             required
           />
+          <label htmlFor="from_name">Parent's name</label>
           <input
+            id="from_name"
             type="text"
             name="from_name"
             placeholder="Parent's name"
             required
           />
-          <input type="email" name="user_email" placeholder="Email" required />
+          <label htmlFor="user_email">Email</label>
+          <input id="user_email" type="email" name="user_email" placeholder="Email" required />
+          <label htmlFor="phone_number">Phone number</label>
           <input
+            id="phone_number"
             type="tel"
             name="phone_number"
             placeholder="Phone number"
             required
           />
-          <textarea name="message" placeholder="Message" required />
+          <label htmlFor="message">Message</label>
+          <textarea id="message" name="message" placeholder="Message" required />
           <input type="submit" value="Send" />
-          {messageSent && (
-            <div className="thank-you-message">
-              Thank you! We will contact you as soon as possible.
-            </div>
-          )}
+          <div aria-live="polite">
+            {messageSent && (
+              <div className="thank-you-message">
+                Thank you! We will contact you as soon as possible.
+              </div>
+            )}
+          </div>
           <div className="contact-info">
             <span>Email: kindergarten@ymca.org.il</span>
             <span>Phone: 02-5692681</span>
@@ -143,10 +153,12 @@ const StyledContactForm = styled.div`
   }
 
   label {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 5px;
-    font-weight: bold;
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 2px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
   }
 
   input,

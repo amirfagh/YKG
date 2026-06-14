@@ -20,29 +20,31 @@ import photo25 from "../images/kids/25.webp";
 import photo26 from "../images/kids/26.webp";
 import Header from "./header";
 
+const photoData = [
+  { src: photo1,  alt: "Children playing together at YMCA Peace Preschool" },
+  { src: photo2,  alt: "Kids engaged in a classroom activity" },
+  { src: photo3,  alt: "Preschool children during a group lesson" },
+  { src: photo4,  alt: "Children enjoying outdoor playtime" },
+  { src: photo5,  alt: "Young students with their teacher at the preschool" },
+  { src: photo6,  alt: "Kids participating in a creative arts session" },
+  { src: photo7,  alt: "Children learning together in a bilingual class" },
+  { src: photo8,  alt: "Preschool children during a celebration activity" },
+  { src: photo9,  alt: "Kids smiling during a group activity" },
+  { src: photo10, alt: "Children at Jerusalem YMCA Peace Preschool" },
+  { src: photo11, alt: "Young children learning through play" },
+  { src: photo12, alt: "Preschool students enjoying an enrichment activity" },
+  { src: photo13, alt: "Children and educators at the YMCA Peace Preschool" },
+  { src: photo20, alt: "Kids participating in a cultural celebration" },
+  { src: photo24, alt: "Children during a structured learning session" },
+  { src: photo25, alt: "Preschool kids enjoying an outdoor activity" },
+  { src: photo26, alt: "Young students at the YMCA bilingual kindergarten" },
+];
+
 const Gallery = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedPhotoIndex, setSelectedPhotoIndex] = useState(0);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
-  const photos = [
-    photo1,
-    photo2,
-    photo3,
-    photo4,
-    photo5,
-    photo6,
-    photo7,
-    photo8,
-    photo9,
-    photo10,
-    photo11,
-    photo12,
-    photo13,
-    photo20,
-    photo24,
-    photo25,
-    photo26,
-  ];
+  const photos = photoData.map((p) => p.src);
   const openModal = (index) => {
     setSelectedPhotoIndex(index);
     setModalIsOpen(true);
@@ -80,11 +82,12 @@ const Gallery = () => {
         <Header />
         <h2>Photo Gallery</h2>
         <div className="photo-grid">
-          {photos.map((photo, index) => (
-            <img loading="lazy"
+          {photoData.map((item, index) => (
+            <img
+              loading="lazy"
               key={index}
-              src={photo}
-              alt={`Landscape ${index + 1}`}
+              src={item.src}
+              alt={item.alt}
               className="gallery-photo"
             />
           ))}
@@ -97,11 +100,12 @@ const Gallery = () => {
       <Header />
       <h2>Photo Gallery</h2>
       <div className="photo-grid">
-        {photos.map((photo, index) => (
-          <img loading="lazy"
+        {photoData.map((item, index) => (
+          <img
+            loading="lazy"
             key={index}
-            src={photo}
-            alt={`Landscape ${index + 1}`}
+            src={item.src}
+            alt={item.alt}
             className="gallery-photo"
             onClick={() => openModal(index)}
           />

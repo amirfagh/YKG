@@ -41,9 +41,9 @@ const About = () => {
               
             </div>
             <div className="text-section">
-              <div className="handicap-logo7" onClick={handleMenuToggle}>
+              <button className="handicap-logo7" onClick={handleMenuToggle} aria-label="Accessibility options" aria-haspopup="true">
                 <BiHandicap size={40} />
-              </div>
+              </button>
               {showMenu && (
                 <div className="zoom-menu2">
                   <label>
@@ -55,9 +55,9 @@ const About = () => {
                 </div>
               )}
               <img loading="lazy" src={image5} alt="Connecting Element" className="connecting-image2" />
-              <h1 className={`activities-title2 ${isBold ? "bold-text" : ""}`}>
+              <h2 className={`activities-title2 ${isBold ? "bold-text" : ""}`}>
                 The Erna and Henry Leir Peace preschool
-              </h1>
+              </h2>
               <p className={isBold ? "bold-text" : ""}>
                 Founded in 1982, the Erna and Henry Leir Peace Preschool at the
                 Jerusalem International YMCA is a beacon of unity and learning.
@@ -68,9 +68,9 @@ const About = () => {
                 teacher. This fosters a natural environment of partnership and
                 mutual respect.
               </p>
-              <h1 className={`activities-title2 ${isBold ? "bold-text" : ""}`}>
+              <h2 className={`activities-title2 ${isBold ? "bold-text" : ""}`}>
                 Living the Dream of a Harmonious Tomorrow
-              </h1>
+              </h2>
               <p className={isBold ? "bold-text" : ""}>
                 Our preschool is more than just a learning environment; it's a
                 place where families and staff collaboratively live the dream of
@@ -78,9 +78,9 @@ const About = () => {
                 education to bridge cultural divides and lay the foundation for
                 a better world.
               </p>
-              <h1 className={`activities-title2 ${isBold ? "bold-text" : ""}`}>
+              <h2 className={`activities-title2 ${isBold ? "bold-text" : ""}`}>
                 Celebrating Diversity Through Festivities
-              </h1>
+              </h2>
               <p className={isBold ? "bold-text" : ""}>
                 We embrace and celebrate the diverse cultural and religious
                 backgrounds of our students. Our festivities include creating
@@ -89,9 +89,9 @@ const About = () => {
                 often shared with parents, bringing immense joy and excitement
                 to our community.
               </p>
-              <h1 className={`activities-title2 ${isBold ? "bold-text" : ""}`}>
+              <h2 className={`activities-title2 ${isBold ? "bold-text" : ""}`}>
                 Focus on Holistic Development
-              </h1>
+              </h2>
               <p className={isBold ? "bold-text" : ""}>
                 At the core of our philosophy is the emphasis on each child's
                 emotional, social, and cognitive development. Our approach is

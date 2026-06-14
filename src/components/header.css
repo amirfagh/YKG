@@ -91,6 +91,9 @@ margin-left: 10px;
   cursor: pointer;
   margin-left: auto;
   padding: 10px;
+  background: none;
+  border: none;
+  flex-direction: column;
 }
 
 .bar {

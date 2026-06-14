@@ -55,9 +55,9 @@ const DonationPage = () => {
   return (
     <div>
       <Header />
-      <div className="handicap-logo5" onClick={handleMenuToggle}>
+      <button className="handicap-logo5" onClick={handleMenuToggle} aria-label="Accessibility options" aria-haspopup="true">
         <BiHandicap size={50} />
-      </div>
+      </button>
       {showMenu && (
         <div className="menu-container5">
           <button onClick={handleZoomIn}>Zoom In</button>
